@@ -1,0 +1,480 @@
+@import './base/fonts.styl'
+@import './base/reset.styl'
+@import './base/foundation.grid.styl'
+
+@import './components/_colors.styl'
+@import './components/_buttons.styl'
+
+// @import './partials/yyy.styl'
+
+
+.center
+	text-align center
+
+
+body
+	font-family 'GothamProRegular', sans-serif
+	background-color #fff
+	
+.contain-box
+	padding-top 96px	
+	&_b-paste
+		background-color paste
+	&_b-almostBlack
+		background-color almostBlack
+	&_b-almostWhite
+		background-color almostWhite
+
+	&_padding
+		padding 60px 0
+
+
+
+
+		
+.header-primary
+	font-family 'GothamProMedium'
+	font-size 4.8em
+	letter-spacing -.045em
+	margin-bottom 16px
+	line-height 1.16666
+	&_c-almostBlack
+		color almostBlack
+	&_c-almostWhite
+		color almostWhite
+		
+.header-secondary
+	font-size 1.8em
+	letter-spacing -.045em
+	line-height 1.33333
+	margin-bottom 32px
+	&_c-almostBlack
+		color almostBlack
+	&_c-almostWhite
+		color almostWhite
+
+
+
+.main-box
+	color #000
+	background-image url(../img/main-backgrond.jpg)
+	background-position right top
+	background-size cover
+	
+	margin-top 72px
+
+	&_fog
+		background-color fog
+	
+	&__button
+		display inline-block
+		text-decoration none
+		font-size 1.6em
+		font-family 'GothamProMedium'
+		padding 18px 32px
+		color almostWhite
+		border-radius 6px
+		border 1px solid juiceOrange
+		transition all ease .09s
+		margin-bottom 78px
+		&_juiceOrange
+			background-color juiceOrange
+			&:hover
+				color juiceOrange
+				background-color transparent
+	
+	&__aditional-link
+		font-family 'GothamProMedium'
+		font-size 1.4em
+		line-height 1.2
+		text-decoration none
+		color almostBlack
+		opacity .7
+		transition all ease .09s
+		position relative
+		float right
+		margin-bottom 48px
+		&:before
+			content ""
+			width 6px
+			height 10px
+			display inline-block
+			margin-right 8px
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAKCAQAAAA9B+e4AAAASElEQVQI12P4z1DJ9J8BAhkqzSu/V0bDOCmV/yv/QrhAVNkB5haBOVDu/8p8CCcTzElBMEtBBviBmZkQ07QqP0CYENMYYZYCABHYPxZfoos6AAAAAElFTkSuQmCC');
+		&:hover
+			opacity 1
+		
+	.header-primary
+		margin-top 122px
+	.header-secondary
+		margin-bottom 48px
+
+
+
+
+
+
+
+
+.feature-box
+	// background-color #cccccc
+	color almostBlack
+	padding 48px 28px
+	position relative
+	
+	&__icon
+		width 102px
+		height 102px
+		position relative
+		margin 0 auto
+		&_1
+			background-image url(../img/icon-features-1.png)
+		&_2
+			background-image url(../img/icon-features-2.png)
+		&_3
+			background-image url(../img/icon-features-3.png)
+		&_4
+			background-image url(../img/icon-features-4.png)
+		&_5
+			background-image url(../img/icon-features-5.png)
+	
+	&_1:after
+		content ''
+		display block
+		position absolute
+		height 1px
+		width 100%
+		bottom 0
+		left 0
+		background-color #dadada
+		background: linear-gradient(to left, #dadada 0%,#dadada 63%,#fcfcfb 100%);
+	&_1:before
+		content ''
+		display block
+		position absolute
+		height 100%
+		width 1px
+		bottom 0
+		right 0
+		background-color #dadada
+		background: linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%);
+	&_2:after
+		content ''
+		display block
+		position absolute
+		height 1px
+		width 100%
+		bottom 0
+		left 0
+		background-color #dadada
+	// &_2:before
+	// 	content ''
+	// 	display block
+	// 	position absolute
+	// 	height 100%
+	// 	width 1px
+	// 	bottom 0
+	// 	right 0
+	// 	background-color #dadada
+	&_3:after
+		content ''
+		display block
+		position absolute
+		height 1px
+		width 100%
+		bottom 0
+		left 0
+		background-color #dadada
+	&_3:before
+		content ''
+		display block
+		position absolute
+		height 100%
+		width 1px
+		bottom 0
+		left 0
+		background-color #dadada
+	&_5:before
+		content ''
+		display block
+		position absolute
+		height 100%
+		width 1px
+		bottom 0
+		left 0
+		background-color #dadada
+	
+	&__title
+		font-size 1.8em
+		line-height 2.333333
+		font-family 'GothamProMedium'
+		letter-spacing -.025em
+	
+	&__text
+		font-size 1.6em
+		line-height 1.5
+		color #515151
+		letter-spacing -.025em
+
+
+
+.comment-box-nested
+	margin-top 20px
+
+.comment-box
+	padding-left 98px
+	padding-right 32px
+	position relative
+	&:after
+		content '“'
+		display block
+		position absolute
+		top -10px
+		left 12px
+		font-size 11.4em
+		letter-spacing -.045em
+		line-height 1
+		color juiceOrange
+		font-family 'GothamProBlack'
+	&__text
+		font-size 1.4em
+		letter-spacing -.045em
+		line-height 1.6428
+		color almostBlack
+.comments-hide .comment-box
+	transform translateY(60px)
+	opacity 0
+
+
+.person-box-nested
+	margin-top 40px
+	overflow hidden
+	border-top-width 1px
+	border-bottom-width 1px
+	border-style solid
+	border-color #e2e0de
+	padding-top 28px
+	padding-bottom 28px
+
+.person-box
+	padding-left 98px
+	&__avatar
+		position relative
+		display inline-block
+		overflow hidden
+		width 60px
+		height @width
+		border-radius (@width/2)
+		>img
+			position relative
+			width 100%
+			height 100%
+			display block
+			border-radius 60px
+			
+	&__info
+		display inline-block
+		position relative
+		vertical-align top
+		padding-left 16px
+		padding-top 8px	
+	&__name
+		font-family 'GothamProMedium'
+		line-height 1
+		font-size 1.6em
+		letter-spacing -.045em
+	&__work
+		font-family 'GothamProLight'
+		line-height 1.57142
+		font-size 1.4em
+		letter-spacing -.045em
+		text-transform uppercase
+		padding-top 2px
+		
+
+.comments__button
+	display inline-block
+	font-size 1.8em
+	border 1px solid juiceOrange
+	line-height 1
+	padding 14px 20px
+	margin 38px 0
+	letter-spacing -0.045em
+
+
+.map-block
+	background-image url(../img/map-temporary.png)
+	background-repeat no-repeat
+	background-position top center
+	background-size cover
+	
+	&__dropdown
+		font-family 'GothamProBold'
+		line-height 1
+		font-size 1.8em
+		padding 12px 40px 12px 26px
+		min-width 232px
+		position relative
+		margin-bottom 96px
+		margin-top 16px
+		&:hover
+			background-color mellowOrange
+		&:after
+			content ''
+			display block
+			position absolute
+			width 0
+			height 0
+			right 24px
+			top 20px
+			border-left 6px solid transparent
+			border-right 6px solid transparent
+			border-top 6px solid almostWhite
+
+
+
+
+
+.statistics-box-nest
+	overflow hidden
+	padding-bottom 74px
+
+.statistics-box
+	color almostWhite
+	
+	&__head
+		font-size 6em
+		font-family 'GothamProLight'
+		line-height 1
+		letter-spacing -.045em
+		margin-bottom 18px
+	&__body
+		font-size 1.6em
+		line-height 1.3125
+		letter-spacing -.045em
+		padding 0 20px
+
+
+.prices
+	padding-bottom 60px
+
+.prices-box-nest
+	margin-top 60px
+
+.prices-box-wrap
+	padding 18px
+
+.prices-box
+	padding 18px
+	// border 1px solid almostBlack
+	border-width 1px
+	border-style solid
+	border-radius 8px
+	height 520px
+	position relative
+	
+	&__button
+		transition color ease .08s, background-color ease .08s
+	
+	&_almostBlack
+		border-color almostBlack
+		color almostBlack
+		.prices-box__button
+			background-color #fff
+			border 1px solid almostBlack
+			color almostBlack
+			&:hover
+				background-color almostBlack
+				color #fff
+	&_juiceOrange
+		border-color juiceOrange
+		color juiceOrange
+		.prices-box__button
+			background-color #fff
+			border 1px solid juiceOrange
+			color juiceOrange
+			&:hover
+				background-color juiceOrange
+				color #fff
+	&_seriousBlue
+		border-color seriousBlue
+		color seriousBlue
+		.prices-box__button
+			background-color #fff
+			border 1px solid seriousBlue
+			color seriousBlue
+			&:hover
+				background-color seriousBlue
+				color #fff
+	
+	&_icon
+		&:after
+			content ''
+			display block
+			width 114px
+			height 114px
+			position absolute
+			top -62px
+			left 50%
+			margin-left (-@width/2)		
+		&_a:after
+			background-image url(../img/icon-prices-2.jpg)
+		&_b:after
+			background-image url(../img/icon-prices-1.jpg)
+		&_c:after
+			background-image url(../img/icon-prices-3.jpg)
+	
+	&__header
+		font-family 'GothamProMedium'
+		color almostBlack
+		font-size 1.8em
+		line-height 2.33333
+		letter-spacing -.025em
+		margin-top 48px
+	
+	&__price
+		font-family 'GothamProBlack'
+		font-size 5.2em
+		line-height 1
+		letter-spacing -.045em
+		color inherit
+	
+	&__taks
+		font-size 1.8em
+		letter-spacing -.045em
+		color inherit
+		line-height 1.05555555
+	
+	&__service-list
+		color lynch
+		list-style none
+		margin-top 30px
+		padding 0 24px
+		>li
+			border-top 1px solid #E2E0DE
+			padding 12px 0
+			font-size 1.6em
+			letter-spacing -.025em
+			line-height 1.4375
+	
+	&__button-wrap
+		position absolute
+		right 0px
+		left 0px
+		bottom 0px
+		padding 18px
+		
+	&__button
+		text-decoration none
+		display block
+		color almostWhite
+		height 44px
+		border-radius 6px
+		line-height @height
+		font-size 1.6em
+		font-family 'GothamProMedium'
+		letter-spacing -.005em
+
+
+@import './components/_tempAnimation.styl'
+// @import './base/responsive.styl'

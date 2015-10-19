@@ -1,0 +1,23 @@
+{
+  "name": "name",
+  "version": "0.1.0",
+  "scripts": {},
+  "dependencies": {
+    "jquery": "^2.1.4",
+    "moment": "^2.10.6"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-minify-css": "^1.2.1",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rigger": "^0.5.8",
+    "gulp-stylus": "^2.1.0",
+    "webpack": "^1.12.2",
+    "webpack-stream": "^2.1.1"
+  },
+  "private": true,
+  "license": "MIT"
+}
