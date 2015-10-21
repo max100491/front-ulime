@@ -121,6 +121,7 @@ body
 	color almostBlack
 	padding 48px 28px
 	position relative
+	opacity 0
 	&:hover
 		.feature-box__icon
 			transform: translateY(-8px);
@@ -152,16 +153,16 @@ body
 		left 0
 		background-color #dadada
 		background linear-gradient(to left, #dadada 0%,#dadada 63%,#fcfcfb 100%)
-	&_1:before
-		content ''
-		display block
-		position absolute
-		height 100%
-		width 1px
-		bottom 0
-		right 0
-		background-color #dadada
-		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+	// &_1:before
+	// 	content ''
+	// 	display block
+	// 	position absolute
+	// 	height 100%
+	// 	width 1px
+	// 	bottom 0
+	// 	right 0
+	// 	background-color #dadada
+	// 	background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	&_2:after
 		content ''
 		display block
@@ -171,15 +172,17 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
-	// &_2:before
-	// 	content ''
-	// 	display block
-	// 	position absolute
-	// 	height 100%
-	// 	width 1px
-	// 	bottom 0
-	// 	right 0
-	// 	background-color #dadada
+		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+	&_2:before
+		content ''
+		display block
+		position absolute
+		height 100%
+		width 1px
+		bottom 0
+		left 0
+		background-color #dadada
+		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	&_3:after
 		content ''
 		display block
@@ -222,8 +225,13 @@ body
 		line-height 1.5
 		color #515151
 		letter-spacing -.025em
+.no-js
+	.feature-box
+		opacity 1
 
 
+.comments
+	overflow hidden
 
 .comment-box-nested
 	margin-top 20px
@@ -248,9 +256,13 @@ body
 		letter-spacing -.045em
 		line-height 1.6428
 		color almostBlack
-.comments-hide .comment-box
-	transform translateY(60px)
+.comments .comment-box
+	transform translateX(200px)
 	opacity 0
+.no-js
+	.comment-box
+		transform translateX(0)
+		opacity 1
 
 
 .person-box-nested
@@ -297,6 +309,13 @@ body
 		letter-spacing -.045em
 		text-transform uppercase
 		padding-top 2px
+.comments .person-box
+	transform translateX(200px)
+	opacity 0
+.no-js
+	.person-box
+		transform translateX(0)
+		opacity 1
 		
 
 .comments__button

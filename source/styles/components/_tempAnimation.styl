@@ -1,6 +1,6 @@
 @keyframes show
 	0%
-		transform translateY(60px)
+		transform translateX(200px)
 		opacity 0
 	
 	100%
@@ -8,13 +8,58 @@
 		opacity 1
 
 
+@keyframes showOp
+	0%
+		opacity 0
+	
+	100%
+		opacity 1
 
-.comments-animate
-	animation-duration 1s
-	animation-timing-function ease
-	animation-delay 0s
-	animation-direction normal
-	animation-fill-mode forwards
-	animation-iteration-count 1
-	animation-play-state running
-	animation-name show	
+	
+.comments.animate
+	.comment-box
+		animation-duration 1s
+		animation-timing-function ease		
+		animation-direction normal
+		animation-fill-mode forwards
+		animation-iteration-count 1
+		animation-play-state running
+		animation-name show
+	.person-box
+		animation-duration 1s
+		animation-timing-function ease
+		animation-direction normal
+		animation-fill-mode forwards
+		animation-iteration-count 1
+		animation-play-state running
+		animation-name show
+	.comment-box_1,
+	.person-box_1
+		animation-delay 0s
+	.comment-box_2,
+	.person-box_2
+		animation-delay .6s
+	.comment-box_3,
+	.person-box_3
+		animation-delay 1.2s
+
+
+.feature-box-nest.animate
+	.feature-box
+		animation-duration 1s
+		animation-timing-function ease
+		animation-direction normal
+		animation-fill-mode forwards
+		animation-iteration-count 1
+		animation-play-state running
+		animation-name showOp
+	.feature-box_1
+		animation-delay 0s
+	.feature-box_2
+		animation-delay .6s
+	.feature-box_3
+		animation-delay 1.2s
+	.feature-box_4
+		animation-delay 1.8s
+	.feature-box_5
+		animation-delay 2.4s
