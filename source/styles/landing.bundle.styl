@@ -5,11 +5,14 @@
 @import './components/_colors.styl'
 @import './components/_buttons.styl'
 
-// @import './partials/yyy.styl'
+@import './partials/header.styl'
+@import './partials/footer.styl'
 
 
 .center
 	text-align center
+.right
+	text-align right
 
 
 body
@@ -19,19 +22,21 @@ body
 .contain-box
 	padding-top 96px	
 	&_b-paste
-		background-color paste
+		background-color paste	
 	&_b-almostBlack
-		background-color almostBlack
+		background-color almostBlack	
 	&_b-almostWhite
 		background-color almostWhite
-
+	&_b-seriousBlue
+		background-color seriousBlue		
 	&_padding
 		padding 60px 0
+	&_no-padding
+		padding 0
+	
 
 
 
-
-		
 .header-primary
 	font-family 'GothamProMedium'
 	font-size 4.8em
@@ -40,6 +45,7 @@ body
 	line-height 1.16666
 	&_c-almostBlack
 		color almostBlack
+		
 	&_c-almostWhite
 		color almostWhite
 		
@@ -50,6 +56,7 @@ body
 	margin-bottom 32px
 	&_c-almostBlack
 		color almostBlack
+	
 	&_c-almostWhite
 		color almostWhite
 
@@ -60,9 +67,7 @@ body
 	background-image url(../img/main-backgrond.jpg)
 	background-position right top
 	background-size cover
-	
-	margin-top 72px
-
+	// margin-top 72px
 	&_fog
 		background-color fog
 	
@@ -106,27 +111,26 @@ body
 		
 	.header-primary
 		margin-top 122px
+	
 	.header-secondary
 		margin-bottom 48px
 
 
 
-
-
-
-
-
 .feature-box
-	// background-color #cccccc
 	color almostBlack
 	padding 48px 28px
 	position relative
-	
+	&:hover
+		.feature-box__icon
+			transform: translateY(-8px);
 	&__icon
 		width 102px
 		height 102px
 		position relative
 		margin 0 auto
+		transition: transform ease-out .2s .07s
+		transform: translateY(0);
 		&_1
 			background-image url(../img/icon-features-1.png)
 		&_2
@@ -147,7 +151,7 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
-		background: linear-gradient(to left, #dadada 0%,#dadada 63%,#fcfcfb 100%);
+		background linear-gradient(to left, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	&_1:before
 		content ''
 		display block
@@ -157,7 +161,7 @@ body
 		bottom 0
 		right 0
 		background-color #dadada
-		background: linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%);
+		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	&_2:after
 		content ''
 		display block
@@ -185,6 +189,7 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
+		background linear-gradient(to right, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	&_3:before
 		content ''
 		display block
@@ -194,6 +199,7 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
+		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	&_5:before
 		content ''
 		display block
@@ -203,6 +209,7 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
+		background linear-gradient(to bottom, #dadada 0%,#dadada 63%,#fcfcfb 100%)
 	
 	&__title
 		font-size 1.8em
@@ -308,15 +315,34 @@ body
 	background-position top center
 	background-size cover
 	
-	&__dropdown
-		font-family 'GothamProBold'
-		line-height 1
-		font-size 1.8em
-		padding 12px 40px 12px 26px
-		min-width 232px
-		position relative
+	.button-nest
 		margin-bottom 96px
 		margin-top 16px
+	
+	&__button-wrap
+		width 240px
+		height 42px
+		position relative
+		margin 0px auto
+		padding-top 1px
+	
+	&__dropdown		
+		position absolute
+		display block
+		padding 0px
+		height 100%
+		line-height 42px
+		width 100%
+		left 0px
+		top 0
+		font-family 'GothamProBold'
+		// line-height 1
+		font-size 1.8em
+		// padding 12px 40px 12px 26px
+		// min-width 232px
+		// position relative
+		// margin-bottom 96px
+		// margin-top 16px
 		&:hover
 			background-color mellowOrange
 		&:after
@@ -325,11 +351,39 @@ body
 			position absolute
 			width 0
 			height 0
-			right 24px
+			right 14px
 			top 20px
 			border-left 6px solid transparent
 			border-right 6px solid transparent
 			border-top 6px solid almostWhite
+	
+	&__dropdown-list
+		position relative
+		width 100%
+		margin-top 50px
+		background-color juiceOrange
+		z-index: 999;
+		border-radius: 8px;
+		opacity 0
+		pointer-events none
+		transition opacity .15s ease
+	
+	&__dropdown-list.act
+		opacity 1
+		pointer-events all
+	
+	&__dropdown-item
+		color rgb(255, 255, 255)
+		font-size 1.6em
+		padding 12px 0px
+		cursor pointer
+		border-top 1px solid juiceOrange
+		border-bottom 1px solid juiceOrange
+		&:hover
+			background-color mellowOrange
+			border-bottom 1px solid #F57902
+			border-top 1px solid #ED7500
+		
 
 
 
@@ -366,7 +420,6 @@ body
 
 .prices-box
 	padding 18px
-	// border 1px solid almostBlack
 	border-width 1px
 	border-style solid
 	border-radius 8px

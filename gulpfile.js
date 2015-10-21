@@ -17,7 +17,6 @@ var webpack = require("webpack"),
 gulp.task('build:html', function(){
 
 	return gulp.src('./source/pages/*.html')
-		.pipe(plumber())
 		.pipe(rigger())
 		.pipe(gulp.dest('./public/'));
 });
@@ -108,7 +107,7 @@ gulp.task('build:js', function(){
 			},
 			plugins: [
 				// new CommonsChunkPlugin('./app/scripts/common.js', ['admin', 'user'])
-				new UglifyJsPlugin({compress: {warnings: false}})
+				// new UglifyJsPlugin({compress: {warnings: false}})
 				// new ExtractTextPlugin('./styles/[name].css')
 			]
 		}))
