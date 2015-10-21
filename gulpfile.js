@@ -10,6 +10,7 @@ var webpack = require("webpack"),
 	webpackGulp = require("webpack-stream");
 	CommonsChunkPlugin = webpack.optimize.CommonsChunkPlugin,
 	UglifyJsPlugin = webpack.optimize.UglifyJsPlugin,
+	DedupePlugin = webpack.optimize.DedupePlugin,
 	ExtractTextPlugin = require("extract-text-webpack-plugin");
 
 
@@ -107,7 +108,8 @@ gulp.task('build:js', function(){
 			},
 			plugins: [
 				// new CommonsChunkPlugin('./app/scripts/common.js', ['admin', 'user'])
-				new UglifyJsPlugin({compress: {warnings: false}})
+				// new DedupePlugin(),
+				new UglifyJsPlugin({compress: {warnings: false}})				
 				// new ExtractTextPlugin('./styles/[name].css')
 			]
 		}))
