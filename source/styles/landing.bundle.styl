@@ -232,7 +232,7 @@ body
 		line-height 1.5
 		color #515151
 		letter-spacing -.025em
-.no-js
+.no-js,.no-csstransitions
 	.feature-box
 		opacity 1
 
@@ -264,11 +264,11 @@ body
 		line-height 1.6428
 		color almostBlack
 .comments .comment-box
-	transform translateX(200px)
+	transform translate3d(200px, 0, 0)
 	opacity 0
-.no-js
+.no-js,.no-csstransitions
 	.comment-box
-		transform translateX(0)
+		transform translate3d(0, 0, 0)
 		opacity 1
 
 
@@ -317,11 +317,11 @@ body
 		text-transform uppercase
 		padding-top 2px
 .comments .person-box
-	transform translateX(200px)
+	transform translate3d(200px, 0, 0)
 	opacity 0
-.no-js
+.no-js,.no-csstransitions
 	.person-box
-		transform translateX(0)
+		transform translate3d(0, 0, 0)
 		opacity 1
 		
 
@@ -388,8 +388,8 @@ body
 		width 100%
 		margin-top 50px
 		background-color juiceOrange
-		z-index: 999;
-		border-radius: 8px;
+		z-index 999
+		border-radius 8px
 		opacity 0
 		pointer-events none
 		transition opacity .15s ease
@@ -403,12 +403,21 @@ body
 		font-size 1.6em
 		padding 12px 0px
 		cursor pointer
-		border-top 1px solid juiceOrange
-		border-bottom 1px solid juiceOrange
+		border-top-width 1px
+		border-bottom-width 1px
+		border-style solid
+		border-top-color juiceOrange
+		border-bottom-color juiceOrange
+		&:first-child
+			border-top-right-radius 8px
+			border-top-left-radius 8px
+		&:last-child
+			border-bottom-right-radius 8px
+			border-bottom-left-radius 8px
 		&:hover
 			background-color mellowOrange
-			border-bottom 1px solid #F57902
-			border-top 1px solid #ED7500
+			border-top-color #ED7500
+			border-bottom-color #F57902
 		
 
 
