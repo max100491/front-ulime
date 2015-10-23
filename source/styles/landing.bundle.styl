@@ -70,9 +70,10 @@ body
 
 .main-box
 	color #000
-	background-image url(../img/main-backgrond.jpg)
+	background-image url(../img/main-background.jpg)
 	background-position right top
 	background-size cover
+	background-repeat no-repeat
 	// margin-top 72px
 	&_fog
 		background-color fog
@@ -128,7 +129,7 @@ body
 	padding 48px 28px
 	position relative
 	opacity 0
-	height 340px
+	height 380px
 	&:hover
 		.feature-box__icon
 			transform: translateY(-8px);
@@ -565,4 +566,4 @@ body
 
 
 @import './components/_tempAnimation.styl'
-// @import './base/responsive.styl'
+@import './base/responsive.styl'
