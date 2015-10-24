@@ -43,7 +43,7 @@ gulp.task('build:css:o', function(){
 		.pipe(plumber())
 		.pipe(stylus())
 		.pipe(autoprefixer({
-			browsers: ['last 4 versions'],
+			browsers: ['last 6 versions'],
 			cascade: false
 		}))
 		.pipe(minifyCss({compatibility: 'ie9'}))

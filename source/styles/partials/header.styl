@@ -85,6 +85,7 @@
 		background-color almostWhite
 		position absolute
 		border-radius 1px
+		outline none !important
 	>:nth-child(1)
 		top 0
 	>:nth-child(2)
@@ -95,13 +96,13 @@
 
 .header__m-nav
 	position fixed
-	z-index 1000
+	// z-index 1000
 	background-color #255BA5
-	width 260px
+	width 220px
 	height 100%
 	right -@width
 	transform translate3d(0,0,0)
-	transition transform ease .2s
+	transition transform .2s
 
 .header__m-nav.active
-	transform translate3d(-260px,0,0)
+	transform translate3d(-220px,0,0)

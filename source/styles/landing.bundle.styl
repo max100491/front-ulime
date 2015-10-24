@@ -248,6 +248,8 @@ body
 	padding-left 98px
 	padding-right 32px
 	position relative
+	overflow hidden
+	width 100%
 	&:after
 		content '“'
 		display block
@@ -392,12 +394,14 @@ body
 		z-index 999
 		border-radius 8px
 		opacity 0
-		pointer-events none
+		// pointer-events none
+		visibility hidden
 		transition opacity .15s ease
 	
 	&__dropdown-list.act
 		opacity 1
-		pointer-events all
+		// pointer-events all
+		visibility visible
 	
 	&__dropdown-item
 		color rgb(255, 255, 255)
