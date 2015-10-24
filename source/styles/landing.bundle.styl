@@ -18,9 +18,14 @@
 body
 	font-family 'GothamProRegular', sans-serif
 	background-color #fff
+	// min-width 1200px
+#page
+	width 100%
+	height auto
+	position relative
 	
 .contain-box
-	padding-top 96px	
+	padding-top 86px	
 	&_b-paste
 		background-color paste	
 	&_b-almostBlack
@@ -28,9 +33,11 @@ body
 	&_b-almostWhite
 		background-color almostWhite
 	&_b-seriousBlue
-		background-color seriousBlue		
+		background-color seriousBlue
+	&_b-cuteBlack
+		background-color cuteBlack		
 	&_padding
-		padding 60px 0
+		padding 10px 0
 	&_no-padding
 		padding 0
 
@@ -72,9 +79,10 @@ body
 	color #000
 	background-image url(../img/main-background.jpg)
 	background-position right top
-	background-size cover
+	background-size contain
 	background-repeat no-repeat
 	// margin-top 72px
+	min-height 600px
 	&_fog
 		background-color fog
 	
@@ -101,7 +109,7 @@ body
 		line-height 1.2
 		text-decoration none
 		color almostBlack
-		opacity .7
+		opacity .5
 		transition all ease .09s
 		position relative
 		float right
@@ -117,22 +125,26 @@ body
 			opacity 1
 		
 	.header-primary
-		margin-top 122px
+		margin-top 116px
+		margin-bottom 20px
 	
 	.header-secondary
 		margin-bottom 48px
+		line-height 1.55555
 
-
+.feature
+	&__padfixer
+		padding 0 36px
 
 .feature-box
 	color almostBlack
-	padding 48px 28px
+	padding 56px 24px 0px
 	position relative
 	opacity 0
-	height 380px
+	// height 380px
 	&:hover
 		.feature-box__icon
-			transform: translateY(-8px);
+			transform translateY(-8px)
 	&__icon
 		width 102px
 		height 102px
@@ -151,6 +163,8 @@ body
 		&_5
 			background-image url(../img/icon-features-5.png)
 	
+	&_1
+		padding-left 42px	
 	&_1:after
 		content ''
 		display block
@@ -170,7 +184,7 @@ body
 	// 	bottom 0
 	// 	right 0
 	// 	background-color #dadada
-	// 	background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+	// 	background linear-gradient(to top, #dadada 0%,#dadada 50%,#fcfcfb 100%)
 	&_2:after
 		content ''
 		display block
@@ -180,7 +194,7 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
-		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+		background linear-gradient(to top, #dadada 0%,#dadada 50%,#fcfcfb 100%)
 	&_2:before
 		content ''
 		display block
@@ -190,7 +204,9 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
-		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+		background linear-gradient(to top, #dadada 0%,#dadada 50%,#fcfcfb 100%)
+	&_3
+		padding-right 42px
 	&_3:after
 		content ''
 		display block
@@ -210,7 +226,9 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
-		background linear-gradient(to top, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+		background linear-gradient(to top, #dadada 0%,#dadada 50%,#fcfcfb 100%)
+	&_5
+		padding 56px 40px 0px
 	&_5:before
 		content ''
 		display block
@@ -220,7 +238,7 @@ body
 		bottom 0
 		left 0
 		background-color #dadada
-		background linear-gradient(to bottom, #dadada 0%,#dadada 63%,#fcfcfb 100%)
+		background linear-gradient(to bottom, #dadada 0%,#dadada 50%,#fcfcfb 100%)
 	
 	&__title
 		font-size 1.8em
@@ -233,6 +251,7 @@ body
 		line-height 1.5
 		color #515151
 		letter-spacing -.025em
+		padding-bottom 56px
 .no-js,.no-csstransitions
 	.feature-box
 		opacity 1
@@ -265,6 +284,7 @@ body
 		font-size 1.4em
 		letter-spacing -.045em
 		line-height 1.6428
+		padding-right 22px
 		color almostBlack
 .comments .comment-box
 	transform translate3d(200px, 0, 0)
@@ -326,6 +346,8 @@ body
 	.person-box
 		transform translate3d(0, 0, 0)
 		opacity 1
+.comments_padding
+	padding-top 58px
 		
 
 .comments__button
@@ -343,10 +365,12 @@ body
 	background-repeat no-repeat
 	background-position top center
 	background-size cover
+	height 596px
+	overflow hidden
 	
 	.button-nest
 		margin-bottom 96px
-		margin-top 16px
+		margin-top 48px
 	
 	&__button-wrap
 		width 240px
@@ -367,6 +391,8 @@ body
 		font-family 'GothamProBold'
 		// line-height 1
 		font-size 1.8em
+		-moz-user-select none
+		user-select none
 		// padding 12px 40px 12px 26px
 		// min-width 232px
 		// position relative
@@ -378,13 +404,12 @@ body
 			content ''
 			display block
 			position absolute
-			width 0
-			height 0
-			right 14px
-			top 20px
-			border-left 6px solid transparent
-			border-right 6px solid transparent
-			border-top 6px solid almostWhite
+			width 10px
+			height 6px
+			right 20px
+			top 50%
+			transform translateY(-50%)
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAARUlEQVQIHQXBMQ2EUABAsQdyMICLM8DK8icSEjwg9zYmUtpk8ZMku1WZ/DEkNx5zMsBw47UpyQC8NilJLnBKSpLsDkn6AA6uT9bzONjDAAAAAElFTkSuQmCC');
 	
 	&__dropdown-list
 		position relative
@@ -392,7 +417,7 @@ body
 		margin-top 50px
 		background-color juiceOrange
 		z-index 999
-		border-radius 8px
+		border-radius 4px
 		opacity 0
 		// pointer-events none
 		visibility hidden
@@ -431,7 +456,7 @@ body
 
 .statistics-box-nest
 	overflow hidden
-	padding-bottom 74px
+	// padding-bottom 74px
 
 .statistics-box
 	color almostWhite
@@ -451,6 +476,8 @@ body
 
 .prices
 	padding-bottom 60px
+	&_padding
+		padding-top 58px
 
 .prices-box-nest
 	margin-top 60px
@@ -473,32 +500,32 @@ body
 		border-color almostBlack
 		color almostBlack
 		.prices-box__button
-			background-color #fff
-			border 1px solid almostBlack
-			color almostBlack
+			background-color almostBlack
+			border 1px solid almostBlack			
+			color #fff
 			&:hover
-				background-color almostBlack
-				color #fff
+				background-color #fff
+				color almostBlack
 	&_juiceOrange
 		border-color juiceOrange
 		color juiceOrange
 		.prices-box__button
-			background-color #fff
-			border 1px solid juiceOrange
-			color juiceOrange
+			background-color juiceOrange
+			border 1px solid juiceOrange			
+			color #fff
 			&:hover
-				background-color juiceOrange
-				color #fff
+				background-color #fff
+				color juiceOrange
 	&_seriousBlue
 		border-color seriousBlue
 		color seriousBlue
 		.prices-box__button
-			background-color #fff
-			border 1px solid seriousBlue
-			color seriousBlue
+			background-color seriousBlue
+			border 1px solid seriousBlue			
+			color #fff
 			&:hover
-				background-color seriousBlue
-				color #fff
+				background-color #fff
+				color seriousBlue
 	
 	&_icon
 		&:after

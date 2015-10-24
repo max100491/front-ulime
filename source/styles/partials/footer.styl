@@ -25,13 +25,15 @@
 	letter-spacing -.045em
 	margin-bottom 10px
 	padding-top 8px
+	&_near
+		margin-bottom 2px
 
 .footer__number
 	font-family 'GothamProBold'
 	font-size 2.4em
 	letter-spacing -.045em
 	color seriousBlue
-	margin-bottom 24px
+	margin-bottom 14px
 
 .footer__rounded-button
 	display inline-block
@@ -39,12 +41,14 @@
 	color almostBlack
 	font-size 1.8em
 	letter-spacing -.045em
-	padding 12px 16px
-	border 1px solid #b3b3b3
+	padding 13px 16px
+	border 1px solid rgba(almostBlack, .3)
 	border-radius 6px
-	margin-right 10px
+	margin-right 12px
+	margin-top 12px
 	&:hover
-		background-color almostWhite
+		background-color #f5f5f5
+		border-color rgba(almostBlack, .7)
 	
 .footer__social
 	display inline-block
@@ -52,9 +56,52 @@
 	height 44px
 	margin-right 6px
 	background-image url(../img/soc-sprite.png)
+	margin-top 14px
 	&:hover
 		opacity .8
 	&_fb
 		background-position 0 0
 	&_vk
 		background-position 44px 0
+
+.footer__routes
+	margin-top 32px
+	&_decorate
+		padding 12px 20px
+		border 1px solid rgba(almostBlack, .3)
+		border-radius 6px
+		&:hover
+			background-color #f5f5f5
+			border-color rgba(almostBlack, .7)
+
+.footer__routes li
+	// float left
+	display inline
+	// margin 0 0 0 40px
+
+.footer__routes a
+	color almostBlack
+	font-family 'GothamProRegular'
+	display inline
+	text-decoration none
+	font-size 1.8em
+	letter-spacing -.045em
+
+.footer__dropdown
+	float left
+	// margin-top 10px
+	// margin-left 30px
+	.footer__routes_decorate
+		padding-right 40px
+		position relative
+		&:after
+			content ''
+			display block
+			width 10px
+			height 6px
+			position absolute
+			right 10px
+			top 50%
+			transform translateY(-50%)
+			background-repeat no-repeat
+			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAAS0lEQVQI12P4z8CixeL3nwECWVJYzP8zMLAwsnxg+c+SCRbqALK+szCBmJlAJlAYLPSXJRqo8j9CGCoEFQQKl4IFiyA8BiQr8mFsAE7DMHbhLL0eAAAAAElFTkSuQmCC');

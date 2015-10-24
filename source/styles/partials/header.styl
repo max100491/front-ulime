@@ -1,7 +1,7 @@
 .header
-	height 62px
-	font-size 0.8em
-	overflow hidden
+	height 70px
+	// font-size 0.8em
+	// overflow hidden
 
 .header__logo
 	font-family 'GothamProBold'
@@ -9,13 +9,14 @@
 	letter-spacing -.045em
 	color #fff !important
 	float left
-	margin-top 18px
+	margin-top 20px
 	text-decoration none
 	outline none !important
 	-moz-user-select none
 	-webkit-user-select none
 	user-select none
 	transform translateY(0)
+	line-height 1
 	&:active
 		outline none !important
 		transform translateY(1px)
@@ -24,12 +25,16 @@
 
 .header__nav
 	float right
-	margin-right 40px
-	margin-top 22px
+	margin-right 138px
+	// margin-top 22px
+	li
+		margin-left 16px
+		margin-right 16px
 	
 .header__dropdown
 	float left
-	margin-top 10px
+	// margin-top 10px
+	margin-left 30px
 	.header__routes_decorate
 		padding-right 40px
 		position relative
@@ -41,14 +46,18 @@
 			position absolute
 			right 10px
 			top 50%
+			transform translateY(-50%)
 			background-repeat no-repeat
 			background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAARUlEQVQIHQXBMQ2EUABAsQdyMICLM8DK8icSEjwg9zYmUtpk8ZMku1WZ/DEkNx5zMsBw47UpyQC8NilJLnBKSpLsDkn6AA6uT9bzONjDAAAAAElFTkSuQmCC')
 
 .header__auth
 	float right
-	margin-top 10px
+	// margin-top 10px
+	.header__routes_decorate
+		margin-left 20px
 
 .header__routes
+	margin-top 24px
 	&_decorate
 		padding 12px 20px
 		border 1px solid rgba(#fff, .3)
@@ -58,13 +67,13 @@
 
 .header__routes li
 	// float left
-	display inline-block
-	margin 0 0 0 40px
+	display inline
+	// margin 0 0 0 40px
 
 .header__routes a
 	color #fff
 	font-family 'GothamProRegular'
-	display inline-block
+	display inline
 	text-decoration none
 	font-size 1.8em
 	letter-spacing -.045em
@@ -99,7 +108,9 @@
 	// z-index 1000
 	background-color #255BA5
 	width 220px
-	height 100%
+	// height 100%
+	top 0
+	bottom 0	
 	right -@width
 	transform translate3d(0,0,0)
 	transition transform .2s
