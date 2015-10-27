@@ -11,7 +11,7 @@ function animate(){
 	var element1 = $('.feature-box-nest')[0];
 	var element2 = $('.comments')[0];
 
-	if (element1.getBoundingClientRect().top < zeroLineFour) $(element1).addClass('animate');
+	if (element1.getBoundingClientRect().top < zeroLineFour) setTimeout(function(){$(element1).addClass('animate');}, 1000);
 	if (element2.getBoundingClientRect().top < zeroLineFour) $(element2).addClass('animate');
 
 	$(window).scroll(function(){

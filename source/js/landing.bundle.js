@@ -5,9 +5,8 @@ var ddw = require('./partials/mapBlockDropDown.js');
 var animate = require('./partials/customAnimate.js');
 
 $('html').removeClass('no-js');
-animate();
+window.onload = animate;
 ddw();
-
 
 
 
