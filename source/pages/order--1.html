@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>uLime</title>
+	
+	<link rel="stylesheet" href="assets/styles/order.bundle.css">
+
+
+	
+</head>
+<body>
+
+	<div id="page">
+		//='./partials/header.html'
+
+		<div class="head-bar-info">
+			<div class="row">
+				<div class="small-12 medium-12 large-push-1 large-10 columns">
+					<div class="row f-ext_h">
+						<div class="row f-ext_h">
+							<div class="row f-ext_h">
+
+								<div class="small-8 columns">
+									<div class="row">
+										<!-- !!! -->
+										<div class="small-7 columns">
+											<div class="row">
+												<div class="head-bar-info__title">Оформление заказа</div>
+											</div>
+										</div>
+										<div class="small-5 columns">
+											<div class="row">
+												<div class="">
+													<!-- tt -->
+												</div>
+											</div>
+										</div>
+										<!-- !!! -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="form-ord">
+			<div class="row">
+				<div class="small-12 medium-12 large-push-1 large-10 columns">
+					<div class="row f-ext_h">
+						<div class="row f-ext_h">
+							<div class="row f-ext_h">
+
+								<div class="small-8 columns">
+									<div class="row">
+										<!-- !!! -->
+										<div class="small-12 columns">
+											<div class="row">
+												<div class="small-9 columns">
+													<div class="row">
+														<div class="form-ord__title">Когда приехать?</div>
+													</div>
+													<div class="row">
+														<select name="" id="" class="form-ord__el-form form-ord__el-form_select form-ord__el-form_select_date">
+															<option value="">Суббота, 26 отктября, 2015</option>
+															<option value="">Воскресенье, 25 отктября, 2015</option>
+															<option value="">Воскресенье, 36 отктября, 2015</option>
+														</select>
+														<span class="form-ord__ind-t">в</span>
+														<select name="" id="" class="form-ord__el-form form-ord__el-form_select form-ord__el-form_select_time">
+															<option value="">15:30</option>
+															<option value="">15:30</option>
+															<option value="">15:30</option>
+														</select>
+													</div>
+												</div>
+												<div class="small-3 columns">
+													<div class="row">
+														<div class="row">
+															<div class="form-ord__title">Сколько комнат?</div>
+														</div>
+													</div>
+													<div class="row">
+														<div class="row">
+															<div class="form-ord__range_nest">
+																<input id="form-ord__range_value" type="hidden" value="1">
+																<div class="form-ord__range form-ord__range_lt">-</div>
+																<div id="form-ord__range_val" class="form-ord__range form-ord__range_val"></div>
+																<div class="form-ord__range form-ord__range_gt">+</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="small-12 columns">
+													<div class="row">
+														<div class="form-ord__title">Выбранный тариф</div>
+													</div>
+													<div class="row">
+														<div class="form-ord__taks-nest">
+
+															<input class="form-ord__radio-taks" id="form-ord__radio-taks_1" type="radio" name="zzz" hidden checked>
+															<label for="form-ord__radio-taks_1" class="form-ord__taks-item">
+																<span class="form-ord__taks-ico form-ord__taks-ico_1"></span>
+																<span class="form-ord__taks-title">Единоразово</span>
+																<span class="form-ord__taks-cost form-ord__taks-cost_bl">600</span>
+															</label>
+
+															<input class="form-ord__radio-taks" id="form-ord__radio-taks_2" type="radio" name="zzz" hidden>
+															<label for="form-ord__radio-taks_2" class="form-ord__taks-item">
+																<span class="form-ord__taks-ico form-ord__taks-ico_2"></span>
+																<span class="form-ord__taks-title">Раз в 2 недели</span>
+																<span class="form-ord__taks-cost form-ord__taks-cost_ble">550</span>
+															</label>
+
+															<input class="form-ord__radio-taks" id="form-ord__radio-taks_3" type="radio" name="zzz" hidden>
+															<label for="form-ord__radio-taks_3" class="form-ord__taks-item">
+																<span class="form-ord__taks-ico form-ord__taks-ico_3"></span>
+																<span class="form-ord__taks-title">Раз в неделю</span>
+																<span class="form-ord__taks-cost form-ord__taks-cost_or">500</span>
+															</label>
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<div class="small-12 columns">
+													<div class="row">
+														<div class="form-ord__title">Дополнительные пожелания</div>
+													</div>
+													<div class="row">
+														<div class="form-ord__add-nest">
+															<input id="form-ord__add-item_checker_0" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_0">
+																<span class="form-ord__add-ico form-ord__add-ico_0"></span>
+																<span>Глажка белья</span>
+															</label>
+
+															<input id="form-ord__add-item_checker_1" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_1">
+																<span class="form-ord__add-ico form-ord__add-ico_1"></span>
+																<span>Мойка холодильника</span>
+															</label>
+
+															<input id="form-ord__add-item_checker_2" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_2">
+																<span class="form-ord__add-ico form-ord__add-ico_2"></span>
+																<span>Мойка духовки</span>
+															</label>
+
+															<input id="form-ord__add-item_checker_3" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_3">
+																<span class="form-ord__add-ico form-ord__add-ico_3"></span>
+																<span>Разбор шкафов</span>
+															</label>
+
+															<input id="form-ord__add-item_checker_4" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_4">
+																<span class="form-ord__add-ico form-ord__add-ico_4"></span>
+																<span>Мойка<br> окон</span>
+															</label>
+
+															<input id="form-ord__add-item_checker_5" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_5">
+																<span class="form-ord__add-ico form-ord__add-ico_5"></span>
+																<span>Уборка балкона</span>
+															</label>
+
+															<input id="form-ord__add-item_checker_6" type="checkbox" hidden>
+															<label class="form-ord__add-item" for="form-ord__add-item_checker_6">
+																<span class="form-ord__add-ico form-ord__add-ico_6"></span>
+																<span>Стирка<br> белья</span>
+															</label>
+
+														</div>
+													</div>
+												</div>
+											</div>
+
+											<div class="row">
+												<a href="order--2.html" class="form-ord__btn">Продолжить</a>
+											</div>
+										</div>
+										<!-- !!! -->
+									</div>
+								</div>
+
+								<div class="small-4 columns">
+									<div class="row">
+										<!-- !!! -->
+										<div class="order-det-nest">
+											<div class="order-det">
+												<div class="order-det_top">Детали заказа</div>
+												<div class="order-det_body">
+													<div class="small-12 columns">
+
+														<div class="row">
+															<div class="small-6 columns">
+																<div class="row">
+																	<div class="order-time" id="order-time">15:30</div>
+																</div>
+															</div>
+															<div class="small-6 columns">
+																<div class="row">
+																	<div class="order-date">
+																		<div class="order-day" id="order-day">Суббота</div>
+																		<div class="order-date-number" id="order-date-number">26 сентября</div>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="decor-nest">
+																<div class="small-6 columns">
+																	<div class="row">Время</div>
+																</div>
+																<div class="small-6 columns">
+																	<div class="row">Тариф</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="small-6 columns">
+																<div class="row">
+																	<span class="order-text-decor order-duration" id="order-duration">3.5</span>
+																</div>
+															</div>
+															<div class="small-6 columns">
+																<div class="row">
+																	<span class="order-text-decor order-taks" id="order-taks">550</span>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="small-12 columns">
+																<div class="row">
+																	<div class="order-additional-task">
+																		<span>Дополнительно</span>
+																		<ul>
+																			<li>Мытье холодильника</li>
+																			<li>Кошки</li>
+																			<li>Мойка вещи</li>
+																			<li>Собаки</li>
+																			<li>Уборка холодильника</li>
+																			<li>Разбор гардероба</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="decor-nest">
+																<div class="small-12 columns">
+																	<div class="row">Итого</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="small-12 columns">
+																<div class="row">
+																	<span class="order-text-decor order-total" id="order-total">2599</span>
+																</div>
+															</div>
+														</div>
+
+													</div>
+												</div>
+											</div>
+										</div>
+										<!-- !!! -->
+									</div>
+								</div>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		//='./partials/footer.html'
+		<div class="header__m-nav"></div>
+	</div>
+
+	<script src="assets/js/order.bundle.js"></script>
+
+</body>
+</html>

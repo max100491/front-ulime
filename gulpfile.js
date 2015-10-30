@@ -70,7 +70,8 @@ gulp.task('build:js:w', function(){
 		.pipe(webpackGulp({
 			watch: true,
 			entry: {
-				'landing.bundle': './source/js/landing.bundle.js'
+				'landing.bundle': './source/js/landing.bundle.js',
+				'order.bundle': './source/js/order.bundle.js'
 			},
 			output: {
 				filename: './js/[name].js'
@@ -96,7 +97,8 @@ gulp.task('build:js', function(){
 		.pipe(webpackGulp({
 			// watch: true,
 			entry: {
-				'landing.bundle': './source/js/landing.bundle.js'
+				'landing.bundle': './source/js/landing.bundle.js',
+				'order.bundle': './source/js/order.bundle.js'
 			},
 			output: {
 				filename: './js/[name].js'
