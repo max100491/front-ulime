@@ -32,3 +32,22 @@ var $ = require('jquery');
 		if ( inputVal.val() <= 5 ) el.html($(this).val());
 	});
 })();
+
+
+
+
+
+;(function(){
+
+	var el = $('.order-det-nest');
+	var footer = $('.footer');
+	var zero  = el[0].getBoundingClientRect().bottom + 78;
+
+	$(window).scroll(function(){
+		if ( footer[0].getBoundingClientRect().top <= zero ) {
+			el.addClass('unfixed')
+		} else {
+			el.removeClass('unfixed')
+		}
+	});
+})();
