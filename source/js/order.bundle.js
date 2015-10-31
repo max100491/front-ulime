@@ -6,7 +6,11 @@ $('.order-det-nest').sticky({
 	bottomSpacing: 200
 });
 
-console.log('xmm')
+var form = $('#formy');
+form.submit(function(e){
+	e.preventDefault();
+	console.log(e);
+})
 
 
 ;(function(){

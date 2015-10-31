@@ -442,6 +442,10 @@ body
 			color #555
 			transform translate3d(12px, -6px, 0)
 			font-size 1.1em
+	&:invalid
+		// border-color green
+		outline none
+		box-shadow none
 	+.order-label
 		display block
 		position absolute
@@ -488,5 +492,130 @@ body
 	&:focus
 		outline none
 
+
+
+.banner
+	background-color #fcfcfb
+	position relative
+	z-index 1
+
+.ban-wrap
+	padding 102px 0 160px
+.ban
+	position relative
+	border-radius 4px
+	border 1px solid #ccc	
+	padding-top 70px
+	background-color #fcfcfb
+	&:after
+		content ''
+		display block
+		z-index -1
+		position absolute
+		width 96%
+		height 96%
+		top 50%
+		left 50%
+		transform translateX(-50%) translateY(-50%)
+		box-shadow 0px 0px 38px 16px #D5D5D4
+.ban-text
+	text-align center
+	letter-spacing -.045em
+	margin-bottom 48px
+	color #464644
+.ban-text_a
+	font-size 4em
+	.ban-person-name
+		text-transform uppercase
+		font-family 'GothamProMedium', sans-serif
+.ban-text_b
+	font-size 3em
+	line-height 1.3
+	margin-bottom 32px
+.ban-text_c
+	font-family 'GothamProLight', sans-serif
+	font-size 2.4em
+	line-height 1.3
+	margin-bottom 72px
+.ban-text_d
+	font-size 3em
+	line-height 1.3
+	margin-bottom 36px
+	>span
+		font-family 'GothamProMedium', sans-serif
+		font-size 1.3333333em
+.ban-decorate-line
+	width 100%
+	height 1px
+	background-color #e2e2e1
+	margin-bottom 32px
+
+.ban-title
+	font-family 'GothamProBold', sans-serif
+	font-size 1.4em
+	line-height 3
+	color #88a256
+	letter-spacing -0.025em
+	text-transform uppercase
+	margin-bottom 38px
+
+.add-wishes-text
+	display block
+	padding 0 20px 0 46px
+	cursor pointer
+	font-family 'GothamProLight', sans-serif
+	font-size 2em
+	letter-spacing -.045em
+	line-height 1.2
+	color #464644
+	position relative
+	margin-bottom 52px
+	&:after
+		border 2px solid #dddddd
+		content ''
+		display block
+		width 32px
+		height @width
+		border-radius 4px
+		background-color #fff
+		position absolute
+		left 0
+		top 4px
+		background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAKhJREFUeNpi/P//PwM1ABMFeoWAmJFSgySA+AgQz4EbBvIaiVgCiK/9R4C5QMxEqSEg8BWItUk15DoWQxzAEYammIUcQ9ANqgLi/UDMRaohyAZVISk6gGQYUYbADNIB4j9oikGGKeEwxB6b92GMWCyG/SbWEPQwwmYYUYZgizVshhE0BJtB6IYRZQgug2CGfSLWEBBmxFOMiADxG2JzMeNgKI9QAECAAQCScdiDkML1FgAAAABJRU5ErkJggg==')
+		background-position center center
+		background-repeat no-repeat
+		transition border-color ease .08s, background-color ease .08s
+
+[id*="add-wishes_"]
+	display none
+	position absolute
+[id*="add-wishes_"]:checked + .add-wishes-text:after
+	background-color #88a256
+	border-color #88a256
+.ban-textarea
+	display block
+	width 100%
+	outline none
+	border 1px solid #ccc
+	border-radius 4px
+	min-width 100%
+	max-width 100%
+	min-height 120px
+	font-size 1.8em
+	color #444
+	letter-spacing -.045em
+	padding 12px 14px
+	&:focus
+		outline none !important
+
+.ban-btn-nest
+	text-align right
+
+.ban-text-icon
+	display inline-block
+	width 112px
+	height @width
+	background-image url(../img/icon-features-4_big.png)
+	vertical-align middle
 
 @import './base/responsive.styl'
