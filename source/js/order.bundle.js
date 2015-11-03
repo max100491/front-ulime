@@ -1,6 +1,10 @@
 var $ = require('jquery');
 var s = require('jquery-sticky');
 
+var mobileNav = require('./partials/mobileNav.js');
+
+mobileNav();
+
 $('.order-det-nest').sticky({
 	topSpacing: 140,
 	bottomSpacing: 200
