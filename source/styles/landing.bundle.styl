@@ -70,13 +70,16 @@ body
 .main-box
 	color #000
 	background-image url(../img/main-background.jpg)
-	background-position right top
-	background-size contain
+	background-position right center
+	// background-size cover
 	background-repeat no-repeat
 	// margin-top 72px
-	min-height 600px
+	height 600px
+	overflow hidden
 	&_fog
 		background-color fog
+	&_mist
+		background-color mist
 	
 	&__button
 		display inline-block
@@ -104,8 +107,8 @@ body
 		opacity .5
 		transition all ease .09s
 		position relative
-		float right
-		margin-bottom 48px
+		float left
+		// margin-bottom 48px
 		&:before
 			content ""
 			width 6px

@@ -111,7 +111,12 @@ gulp.task('build:js', function(){
 			plugins: [
 				// new CommonsChunkPlugin('./app/scripts/common.js', ['admin', 'user'])
 				// new DedupePlugin(),
-				new UglifyJsPlugin({compress: {warnings: false}})				
+				new UglifyJsPlugin({
+					compress: {
+						warnings: false
+					},
+					comments: false
+				})
 				// new ExtractTextPlugin('./styles/[name].css')
 			]
 		}))
