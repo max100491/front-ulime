@@ -61,7 +61,7 @@
 	&_decorate
 		padding 12px 20px
 		border 1px solid rgba(#fff, .3)
-		border-radius 6px
+		border-radius 3px
 		&:hover
 			background-color #467ecc
 
@@ -117,3 +117,10 @@
 
 .header__m-nav.active
 	transform translate3d(-220px,0,0)
+
+.header
+	a
+		&:not([class*="header__logo"])
+			&:not([class*="header__routes_decorate"])
+				&:hover
+					opacity .86

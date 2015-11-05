@@ -53,14 +53,14 @@ gulp.task('build:css:o', function(){
 
 gulp.task('build:image', function(){
 
-	return gulp.src('./source/image/*')
+	return gulp.src('./source/image/*.{jpg,png,gif}')
 		.pipe(gulp.dest('./public/assets/image/'));
 });
 
 
 gulp.task('build:img', ['build:image'], function(){
 
-	return gulp.src('./source/img/*')
+	return gulp.src('./source/img/*.{jpg,png,gif}')
 		.pipe(gulp.dest('./public/assets/img/'));
 });
 
