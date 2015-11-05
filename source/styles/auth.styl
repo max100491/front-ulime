@@ -1,0 +1,111 @@
+grey-form-color = #c8c8c8
+
+input, textarea
+  &
+    border 1px #c8c8c8 solid
+    border-radius 4px
+  &:focus
+    outline none
+    border-color #3472c7
+
+a
+	&,
+	&:active,
+	&:focus
+		color #3472c7
+		text-decoration none
+
+.clear-fix
+	clear both
+
+.section
+	&-form
+		&__form-container
+			position relative
+			background transparent
+			margin 100px 0
+			z-index 12
+			&::before,
+			&::after
+				content: ""
+				position absolute
+				left 0
+				right 0
+				border-bottom 1px grey-form-color solid
+				z-index -1
+			&::before
+				top 50px
+			&::after
+				bottom 202px
+		&__form-wrapper
+			margin 0 auto
+		&__form-title
+			background white
+			font-size 36px
+			padding 30px 0
+			margin 0 auto
+			text-align center
+		&__form-content
+			padding 40px 0
+			margin auto
+		&__form-space-wrapper
+			width 314px
+			margin 0 auto
+			padding 20px 0 60px
+		&__form-space-section-label
+			color #88a256
+			padding 16px 0 16px 10px
+			font-size 1.4em
+			text-transform uppercase
+		&__form-space
+			width 294px
+			font-size 18px
+			padding 8px 10px
+			margin 10px
+		&__form-have-account-link,
+		&__form-recover-pass-link
+			padding 8px 10px
+			text-align right
+			a
+				color #b0b0af
+				&,&:hover
+					text-decoration none
+					font-size 1.4em
+		&__form-have-account-link
+			text-align left
+		&__form-tip-links
+			margin auto
+			text-align center
+			font-size 1.4em
+			padding 50px 0 10px
+		&__form-buttons-space
+			padding 30px 0
+			margin auto
+		&__form-button
+			background white
+		&__form-social-buttons
+			width 338px
+			font-size 9px
+			padding 20px 0 0
+			margin 0 auto
+			&-vk,
+			&-fb
+				display block
+				color white
+				padding 10px 16px 10px 32px
+				margin 0 10px
+				text-decoration none
+				border-radius 2px
+			&-vk
+				background #50759b url('../img/vk-icn.png') no-repeat 10px center
+			&-fb
+				background #3a5897 url('../img/fb-icn.png') no-repeat 10px center
+			&-container
+				padding 30px 0 0
+			&-title
+				padding 10px 0 0
+				font-size 1.4em
+				text-align center
+.section-form-fix
+	height 74px
+	padding 30px 0 0
