@@ -30,7 +30,44 @@
 <body>
 
 	<div id="page">
-		//='./partials/header.html'
+		<div class="header">		
+			<div class="row">
+				<div class="small-12 medium-12 large-push-1 large-10 columns">
+					<div class="row f-ext_h">
+						<div class="row f-ext_h">
+							<div class="row f-ext_h">						
+								<!-- !!! -->
+									<a href="/public" class="header__logo">uLime</a>
+										<div class="header__dropdown">
+											<ul class="header__routes">
+												<li><a class="header__routes_decorate" href="">Москва</a></li>
+											</ul>
+										</div>
+										<div class="header__auth">
+											<ul class="header__routes">
+												<li><a href="">Регистрация</a></li>
+												<li><a class="header__routes_decorate" href="">Вход</a></li>
+											</ul>
+										</div>
+										<nav class="header__nav">
+											<ul class="header__routes">
+												<li><a href="">Вопросы</a></li>
+												<li><a href="">Блог</a></li>
+												<li><a href="">Контакты</a></li>
+											</ul>
+										</nav>
+										<div class="header__hmbrgr">
+											<div></div>
+											<div></div>
+											<div></div>
+										</div>
+								<!-- !!! -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 
 		<div class="head-bar-info">
 			<div class="row">
@@ -94,7 +131,7 @@
 																	</div>
 																	<div class="small-12 columns">
 																		<div class="pay-card__title form-ord__title">Номер карты</div>
-																		<input type="text" class="order-input" id="order-person-name" name="$PAN" id="iPAN" maxlength="16" autocomplete="off"/>
+																		<input type="text" class="order-input" name="$PAN" id="iPAN" maxlength="16" autocomplete="off"/>
 																	</div>
 																	<div class="small-12 columns">
 																		<div class="row">
@@ -103,7 +140,20 @@
 																				<div class="pay-card__title form-ord__title">Срок действия</div>
 																				<div class="row">
 																					<div class="small-5 columns">
-																						<select class="order-select" name="MM" id="month"></select>
+																						<select class="order-select" name="MM" id="month">
+																							<option value="01">01</option>
+																							<option value="02">02</option>
+																							<option value="03">03</option>
+																							<option value="04">04</option>
+																							<option value="05">05</option>
+																							<option value="06">06</option>
+																							<option value="07">07</option>
+																							<option value="08">08</option>
+																							<option value="09">09</option>
+																							<option value="10">10</option>
+																							<option value="11">11</option>
+																							<option value="12">12</option>
+																						</select>
 																					</div>
 																					<div class="small-7 columns">
 																						<select class="order-select" name="YYYY" id="year"></select>
@@ -159,7 +209,7 @@
 														<div class="pay-footer">
 															<div class="row">
 																<div class="small-3 columns">
-																	<button class="pay_btn form-ord__btn">Продолжить</button>
+																	<button class="pay_btn form-ord__btn" id="buttonPayment">Продолжить</button>
 																</div>
 																<div class="small-6 columns">
 																	<div class="pay-card-text">
@@ -190,10 +240,55 @@
 						</div>
 					</div>
 				</div>
+				<input type="hidden" id="MD" name="MD"/>
+				<input type="hidden" id="PaReq" name="PaReq"/>
+				<input type="hidden" id="TermUrl" name="TermUrl"/>
 			</form>
 		</div>
 
-		//='./partials/footer.html'
+		<div class="contain-box contain-box_no-padding footer">
+			
+			<div class="row">
+				<div class="push-1 small-12 medium-10 columns">
+					<div class="row">
+						<div class="row">
+							<div class="row">
+								
+								<!-- !!! -->
+									<div class="small-2 columns">
+										<div class="footer__logo">uLime</div>
+										<div class="footer__dropdown">
+											<ul class="footer__routes">
+												<li><a class="footer__routes_decorate" href="">Москва</a></li>
+											</ul>
+										</div>
+									</div>
+									<div class="small-3 columns">
+										<div class="footer__text">Мобильные приложения</div>
+										<a href="" class="footer__rounded-button">iOS</a>
+										<a href="" class="footer__rounded-button">Android</a>
+									</div>
+									<div class="small-offset-1 small-2 columns">
+										<div class="footer__text">Мы в соцсетях</div>
+										<a href="" class="footer__social footer__social_fb"></a>
+										<a href="" class="footer__social footer__social_vk"></a>
+									</div>
+									<div class="small-4 columns">
+										<div class="right">
+											<div class="footer__number">+7 (499)390-66-13</div>
+											<div class="footer__text footer__text_near">info@ulime.ru</div>
+											<div class="footer__text">&#169; 2015 uLime</div>
+										</div>
+									</div>
+								<!-- !!! -->
+		
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+		</div>
 		<div class="header__m-nav"></div>
 	</div>
 

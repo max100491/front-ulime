@@ -131,7 +131,7 @@
 																	</div>
 																	<div class="small-12 columns">
 																		<div class="pay-card__title form-ord__title">Номер карты</div>
-																		<input type="text" class="order-input" id="order-person-name" name="$PAN" id="iPAN" maxlength="16" autocomplete="off"/>
+																		<input type="text" class="order-input" name="$PAN" id="iPAN" maxlength="16" autocomplete="off"/>
 																	</div>
 																	<div class="small-12 columns">
 																		<div class="row">
@@ -140,7 +140,20 @@
 																				<div class="pay-card__title form-ord__title">Срок действия</div>
 																				<div class="row">
 																					<div class="small-5 columns">
-																						<select class="order-select" name="MM" id="month"></select>
+																						<select class="order-select" name="MM" id="month">
+																							<option value="01">01</option>
+																							<option value="02">02</option>
+																							<option value="03">03</option>
+																							<option value="04">04</option>
+																							<option value="05">05</option>
+																							<option value="06">06</option>
+																							<option value="07">07</option>
+																							<option value="08">08</option>
+																							<option value="09">09</option>
+																							<option value="10">10</option>
+																							<option value="11">11</option>
+																							<option value="12">12</option>
+																						</select>
 																					</div>
 																					<div class="small-7 columns">
 																						<select class="order-select" name="YYYY" id="year"></select>
@@ -196,7 +209,7 @@
 														<div class="pay-footer">
 															<div class="row">
 																<div class="small-3 columns">
-																	<button class="pay_btn form-ord__btn">Продолжить</button>
+																	<button class="pay_btn form-ord__btn" id="buttonPayment">Продолжить</button>
 																</div>
 																<div class="small-6 columns">
 																	<div class="pay-card-text">
@@ -227,6 +240,9 @@
 						</div>
 					</div>
 				</div>
+				<input type="hidden" id="MD" name="MD"/>
+				<input type="hidden" id="PaReq" name="PaReq"/>
+				<input type="hidden" id="TermUrl" name="TermUrl"/>
 			</form>
 		</div>
 
