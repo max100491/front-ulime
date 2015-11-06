@@ -1,1 +1,120 @@
-input,textarea{border:1px solid #c8c8c8;border-radius:4px}input:focus,textarea:focus{outline:0;border-color:#3472c7}a,a:active,a:focus{color:#3472c7;text-decoration:none}.clear-fix{clear:both}.section-form__form-container{position:relative;background:0 0;margin:100px 0;z-index:12}.section-form__form-container::after,.section-form__form-container::before{content:"";position:absolute;left:0;right:0;border-bottom:1px #c8c8c8 solid;z-index:-1}.section-form__form-container::before{top:50px}.section-form__form-container::after{bottom:202px}.section-form__form-wrapper{margin:0 auto}.section-form__form-title{background:#fff;font-size:36px;padding:30px 0;margin:0 auto;text-align:center}.section-form__form-content{padding:40px 0;margin:auto}.section-form__form-space-wrapper{width:314px;margin:0 auto;padding:20px 0 60px}.section-form__form-space-section-label{color:#88a256;padding:16px 0 16px 10px;font-size:1.4em;text-transform:uppercase}.section-form__form-space{width:294px;font-size:18px;padding:8px 10px;margin:10px}.section-form__form-have-account-link,.section-form__form-recover-pass-link{padding:8px 10px;text-align:right}.section-form__form-have-account-link a,.section-form__form-recover-pass-link a{color:#b0b0af}.section-form__form-have-account-link a,.section-form__form-have-account-link a:hover,.section-form__form-recover-pass-link a,.section-form__form-recover-pass-link a:hover{text-decoration:none;font-size:1.4em}.section-form__form-have-account-link{text-align:left}.section-form__form-tip-links{margin:auto;text-align:center;font-size:1.4em;padding:50px 0 10px}.section-form__form-buttons-space{padding:30px 0;margin:auto}.section-form__form-button{background:#fff}.section-form__form-social-buttons{width:338px;font-size:9px;padding:20px 0 0;margin:0 auto}.section-form__form-social-buttons-fb,.section-form__form-social-buttons-vk{display:block;color:#fff;padding:10px 16px 10px 32px;margin:0 10px;text-decoration:none;border-radius:2px}.section-form__form-social-buttons-vk{background:url(../img/vk-icn.png) 10px center no-repeat #50759b}.section-form__form-social-buttons-fb{background:url(../img/fb-icn.png) 10px center no-repeat #3a5897}.section-form__form-social-buttons-container{padding:30px 0 0}.section-form__form-social-buttons-title{padding:10px 0 0;font-size:1.4em;text-align:center}.section-form-fix{height:74px;padding:30px 0 0}
+.clear-fix {
+  clear: both;
+}
+.section-form__form-container {
+  position: relative;
+  background: transparent;
+  margin: 100px 0;
+  z-index: 12;
+}
+.section-form__form-container::before,
+.section-form__form-container::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  border-bottom: 1px #c8c8c8 solid;
+  z-index: -1;
+}
+.section-form__form-container::before {
+  top: 50px;
+}
+.section-form__form-container::after {
+  bottom: 202px;
+}
+.section-form__form-wrapper {
+  margin: 0 auto;
+}
+.section-form__form-title {
+  background: #fff;
+  font-size: 36px;
+  padding: 30px 0;
+  margin: 0 auto;
+  text-align: center;
+}
+.section-form__form-content {
+  padding: 40px 0;
+  margin: auto;
+}
+.section-form__form-space-wrapper {
+  width: 314px;
+  margin: 0 auto;
+  padding: 20px 0 60px;
+}
+.section-form__form-space-section-label {
+  color: #88a256;
+  padding: 16px 0 16px 10px;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+.section-form__form-space {
+  width: 294px;
+  font-size: 18px;
+  padding: 8px 10px;
+  margin: 10px;
+}
+.section-form__form-have-account-link,
+.section-form__form-recover-pass-link {
+  padding: 8px 10px;
+  text-align: right;
+}
+.section-form__form-have-account-link a,
+.section-form__form-recover-pass-link a {
+  color: #b0b0af;
+}
+.section-form__form-have-account-link a,
+.section-form__form-recover-pass-link a,
+.section-form__form-have-account-link a:hover,
+.section-form__form-recover-pass-link a:hover {
+  text-decoration: none;
+  font-size: 1.4em;
+}
+.section-form__form-have-account-link {
+  text-align: left;
+}
+.section-form__form-tip-links {
+  margin: auto;
+  text-align: center;
+  font-size: 1.4em;
+  padding: 50px 0 10px;
+}
+.section-form__form-buttons-space {
+  padding: 30px 0;
+  margin: auto;
+}
+.section-form__form-button {
+  background: #fff;
+}
+.section-form__form-social-buttons {
+  width: 338px;
+  font-size: 9px;
+  padding: 20px 0 0;
+  margin: 0 auto;
+}
+.section-form__form-social-buttons-vk,
+.section-form__form-social-buttons-fb {
+  display: block;
+  color: #fff;
+  padding: 10px 16px 10px 32px;
+  margin: 0 10px;
+  text-decoration: none;
+  border-radius: 2px;
+}
+.section-form__form-social-buttons-vk {
+  background: #50759b url("../img/vk-icn.png") no-repeat 10px center;
+}
+.section-form__form-social-buttons-fb {
+  background: #3a5897 url("../img/fb-icn.png") no-repeat 10px center;
+}
+.section-form__form-social-buttons-container {
+  padding: 30px 0 0;
+}
+.section-form__form-social-buttons-title {
+  padding: 10px 0 0;
+  font-size: 1.4em;
+  text-align: center;
+}
+.section-form-fix {
+  height: 74px;
+  padding: 30px 0 0;
+}

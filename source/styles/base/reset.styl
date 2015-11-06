@@ -138,6 +138,13 @@ a
   vertical-align baseline
   background transparent
 
+a
+  &,
+  &:active,
+  &:focus
+    color #3472c7
+    text-decoration none
+
 a:active,
 a:hover
   outline 0
@@ -169,6 +176,14 @@ table
   border-spacing 0
   border-collapse collapse
   border-spacing 0
+
+input, textarea
+  &
+    border 1px #c8c8c8 solid
+    border-radius 4px
+  &:focus
+    outline none
+    border-color #3472c7
 
 input,
 select
@@ -295,3 +310,6 @@ optgroup
 td,
 th
   padding 0
+  
+.clear-fix
+  clear both

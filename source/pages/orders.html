@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="assets/styles/common.bundle.css">
+	<link rel="stylesheet" href="assets/styles/order.bundle.css">
+	<title>Мои заказы</title>
+</head>
+<body>
+	<div id="page">
+		//='./partials/header.html'
+		<div class="row">
+			<div class="push-1 small-12 medium-10 columns">
+				<div class="row">
+					<div class="row">
+						<div class="row">
+							<div class="section-orders__orders-header">
+								<div class="section-orders__orders-header-title left">Мои заказы</div>
+								<div class="section-orders__orders-header-pro-links left">
+									<a href="#" class="section-orders__orders-header-pro-link pro-link-active left">Домработницы</a>
+									<a href="#" class="section-orders__orders-header-pro-link pro-link-unactive left">Химчистка</a>
+								</div>
+								<a href="#" class="section-orders__orders-header-action-link button button-big button-juice right">Пригласить домработницу</a>
+								<div class="clear-fix"></div>
+							</div>
+							<div class="section-orders__orders-list orders-status-notapproved-border">
+								<div class="section-orders__orders-list-wrapper">
+									<div class="section-orders__orders-info bordered-bottom">
+										<div class="section-orders__orders-info-box orders-address left">
+											<div class="section-orders__orders-info-title orders-label-grey">Адрес</div>
+											<div>
+												<input id="orders-set-date" type="text" name="orders-date" value="Белореченская 41 - 2">
+											</div>
+										</div>
+										<div class="section-orders__orders-info-box orders-datetime left">
+											<div class="section-orders__orders-info-title orders-label-grey">Дата и время</div>
+											<div class="orders-datetime-spaces">
+												<input id="orders-set-date" type="text" name="orders-date" value="30.09.2015">
+												<span>в</span>
+												<input type="time" id="orders-set-time" name="orders-date" value="15:30">
+											</div>
+										</div>
+										<div class="section-orders__orders-info-box orders-delay left">
+											<div class="section-orders__orders-info-title orders-label-grey">Время уборки</div>
+											<select class="orders-set-delay form-ord__el-form_select form-ord__el-form_select_time" name="" id="orders-set-delay">
+												<option value="4">4 часа</option>
+											</select>
+										</div>
+										<div class="section-orders__orders-info-box orders-rate right">
+											<div class="section-orders__orders-info-title orders-label-grey">Ваша оценка</div>
+											<div>
+												<div class="orders-rate-positive left"></div>
+												<div class="orders-rate-negative right"></div>
+												<div class="clear-fix"></div>
+											</div>
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="section-orders__orders-summary">
+										<div class="section-orders__orders-housekeeper-info left">
+											<div class="section-orders__orders-housekeeper-info-title">Домработница</div>
+											<div class="section-orders__orders-housekeeper-info-name">Марья Петровна</div>
+										</div>
+										<div class="right">
+											<!-- <div class="section-orders__orders-price left">3000 <sup>руб</sup></div> -->
+											<div class="section-orders__orders-indicator orders-indicator-notapproved left">
+												Не подтверждён
+											</div>
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+								</div>
+							</div>
+							<div class="section-orders__orders-list orders-status-success-border">
+								<div class="section-orders__orders-list-wrapper">
+									<div class="section-orders__orders-info bordered-bottom">
+										<div class="section-orders__orders-info-box orders-address left">
+											<div class="section-orders__orders-info-title orders-label-grey">Адрес</div>
+											<div class="orders-address-text">Белореченская 41 - 2</div>
+										</div>
+										<div class="section-orders__orders-info-box orders-datetime left">
+											<div class="section-orders__orders-info-title orders-label-grey">Дата и время</div>
+											<div>
+												<div class="orders-datetime-time left">
+													15:30
+												</div>
+												<div class="orders-datetime-date left">
+													<div>Суббота</div>
+													<div style="color: #ff9400;">26 сентября</div>
+												</div>
+												<div class="clear-fix"></div>
+											</div>
+										</div>
+										<div class="section-orders__orders-info-box orders-delay left">
+											<div class="section-orders__orders-info-title orders-label-grey">Время уборки</div>
+											<div>3,5 <sup>часа</sup></div>
+										</div>
+										<div class="section-orders__orders-info-box orders-rate right">
+											<div class="section-orders__orders-info-title orders-label-grey">Ваша оценка</div>
+											<div>
+												<div class="orders-rate-positive left"></div>
+												<div class="orders-rate-negative right"></div>
+												<div class="clear-fix"></div>
+											</div>
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+									<div class="section-orders__orders-summary">
+										<div class="section-orders__orders-housekeeper-info left">
+											<div class="section-orders__orders-housekeeper-info-title">Домработница</div>
+											<div class="section-orders__orders-housekeeper-info-name">Марья Петровна</div>
+										</div>
+										<div class="right">
+											<div class="section-orders__orders-price left">3000 <sup>руб</sup></div>
+											<div class="section-orders__orders-indicator orders-indicator-approved left">
+												Выполненный
+											</div>
+										</div>
+										<div class="clear-fix"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		//='./partials/footer.html'
+		<div class="header__m-nav"></div>
+	</div>
+</body>
+</html>

@@ -46,9 +46,9 @@
 										</div>
 										<nav class="header__nav">
 											<ul class="header__routes">
-												<li><a href="">Вопросы</a></li>
-												<li><a href="">Блог</a></li>
-												<li><a href="">Контакты</a></li>
+												<li><a href="">Вопросы</a></li>										
+												<li><a href="contacts.html">Контакты</a></li>
+												<li><a href="#a-prices">Цены</a></li>
 											</ul>
 										</nav>
 										<div class="header__hmbrgr">
@@ -90,6 +90,12 @@
 									</div>
 								</div>
 
+								<div class="small-4 columns">
+									<div class="row">
+										<span class="pay-logo">uLime</span>
+									</div>
+								</div>
+
 							</div>
 						</div>
 					</div>
@@ -98,149 +104,13 @@
 		</div>
 
 		<div class="form-ord">
-			<form action="" method="post" class="formPayment" id="formPayment" name="PaymentForm">
-				<input type="hidden" id="expiry" >
-				<input type="hidden" id="mdOrder" >
-				<input type="hidden" id="location" value="/../">
-				<input type="hidden" id="language" value="ru">
-				<div class="row">
-					<div class="small-12 medium-12 large-push-1 large-10 columns">
-						<div class="row f-ext_h">
-							<div class="row f-ext_h">
-								<div class="row f-ext_h">
-
-									<div class="small-12 columns">
-										<div class="row">
-											<!-- !!! -->
-											<div class="small-12 columns">
-												<div class="row">
-													<div class="small-5 columns">
-														<div class="row">
-															<div class="small-12 columns">
-																<div class="form-ord__title">Платежные данные</div>
-
-																<div class="pay-card">
-																	<div class="small-12 columns">
-																		<!-- <div class="pay-card__title form-ord__title">Владелец</div> -->
-																		<input style="display:none;" class="order-input" name="TEXT" id="iTEXT" maxlength="90" autocomplete="off" type="text" hidden/>
-																	</div>
-																	<div class="small-12 columns">
-																		<div class="pay-card__title form-ord__title">Номер карты</div>
-																		<input type="text" class="order-input" name="$PAN" id="iPAN" maxlength="16" autocomplete="off"/>
-																	</div>
-																	<div class="small-12 columns">
-																		<div class="row">
-
-																			<div class="small-7 columns">
-																				<div class="pay-card__title form-ord__title">Срок действия</div>
-																				<div class="row">
-																					<div class="small-5 columns">
-																						<select class="order-select" name="MM" id="month">
-																							<option value="01">01</option>
-																							<option value="02">02</option>
-																							<option value="03">03</option>
-																							<option value="04">04</option>
-																							<option value="05">05</option>
-																							<option value="06">06</option>
-																							<option value="07">07</option>
-																							<option value="08">08</option>
-																							<option value="09">09</option>
-																							<option value="10">10</option>
-																							<option value="11">11</option>
-																							<option value="12">12</option>
-																						</select>
-																					</div>
-																					<div class="small-7 columns">
-																						<select class="order-select" name="YYYY" id="year"></select>
-																					</div>
-																				</div>
-																			</div>
-
-																			<div class="small-offset-1 small-4 columns">
-																				<div class="pay-card__title form-ord__title">CVV/CVV2</div>
-																				<input type="text" class="order-input" maxlength="4" name="$CVC" id="iCVC" autocomplete="off" type="password"/>
-																			</div>
-
-																		</div>
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-
-													<div class="small-7 columns">
-														<div class="row">
-
-															<div class="small-6 columns">
-																<div class="pay-card__title pay-card__title_notice form-ord__title">Для проверки подлинности карты с нее будет снят<br /> 1 рубль</div>
-																<div class="pay-card-text">
-																	Стоимость заказа будет списана с вашей карты только после того, как вам доставят чистые вещи
-																</div>
-															</div>
-														</div>
-
-														<div class="row">
-															<div class="small-6 columns">
-																<div class="pay__logo-brands"></div>
-															</div>
-															<div class="small-6 columns">
-																<div class="pay-cost-wrap">
-																	<div class="pay-cost-title">Итого</div>
-																	<div class="pay-amount" id="amount">99999</div>
-																</div>
-															</div>
-														</div>
-														
-													</div>
-												</div>
-
-												<div class="row">
-
-													<div class="small-12 columns">
-														<div id="numberCountdown"></div>
-														<div id="errorBlock" style="color:red;"></div>
-														<div id="infoBlock"></div>
-														<div id="orderNumber" style="display: none;"></div>
-														<div class="pay-footer">
-															<div class="row">
-																<div class="small-3 columns">
-																	<button class="pay_btn form-ord__btn" id="buttonPayment">Продолжить</button>
-																</div>
-																<div class="small-6 columns">
-																	<div class="pay-card-text">
-																		Передача информации защищена сертификатом SSL<br /> Сайт в полной мере отвечает стандартам безопасности платежных систем Visa и MasterCard (PCI compliacy)
-																	</div>
-																</div>
-																<div class="small-3 columns">
-																	<div class="pay-card-text pay-card-text_smaller pay-card-text_bg">
-																		Данные карты защищены по международному стандарту PCI DSS
-																	</div>
-																</div>
-															</div>
-														</div>
-													</div>
-													<div class="small-12 columns">
-														
-													</div>												
-												</div>
-											</div>
-											<!-- !!! -->
-										</div>
-									</div>
-
-									
-
-								</div>
-							</div>
-						</div>
-					</div>
+			<div class="row">
+				<div class="small-10 small-push-1 columns">
+					<div class="alfa-error-block" id="errorBlock"></div>
 				</div>
-				<input type="hidden" id="MD" name="MD"/>
-				<input type="hidden" id="PaReq" name="PaReq"/>
-				<input type="hidden" id="TermUrl" name="TermUrl"/>
-			</form>
+			</div>			
 		</div>
-
+		
 		<div class="contain-box contain-box_no-padding footer">
 			
 			<div class="row">
@@ -259,7 +129,7 @@
 										<a href="" class="footer__rounded-button">iOS</a>
 										<a href="" class="footer__rounded-button">Android</a>
 									</div>
-									<div class="small-offset-1 small-2 columns">
+									<div class="small-2 columns">
 										<div class="footer__text">Мы в соцсетях</div>
 										<a href="" class="footer__social footer__social_fb"></a>
 										<a href="" class="footer__social footer__social_vk"></a>
@@ -280,6 +150,7 @@
 			</div>
 		
 		</div>
+
 		<div class="header__m-nav"></div>
 	</div>
 

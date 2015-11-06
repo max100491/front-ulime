@@ -1,0 +1,179 @@
+@import './components/_colors.styl'
+// @import './components/_buttons.styl'
+
+.center
+	text-align center
+.right
+	text-align right
+
+body
+	font-family 'GothamProRegular', sans-serif
+	background-color #fff
+
+#page
+	width 100%
+	height auto
+	position relative
+	
+.contain-box
+	padding-top 86px	
+	&_b-paste
+		background-color paste	
+	&_b-almostBlack
+		background-color almostBlack	
+	&_b-almostWhite
+		background-color almostWhite
+	&_b-seriousBlue
+		background-color seriousBlue
+	&_b-cuteBlack
+		background-color cuteBlack		
+	&_padding
+		padding 10px 0
+	&_no-padding
+		padding 0
+
+
+.decorate-line
+	height 1px
+	background-color almostWhite
+	background: linear-gradient(to right, #fcfcfb 0%,#dcdcdc 25%,#dcdcdc 75%,#fcfcfb 100%)
+
+
+.contacts-top
+	overflow hidden
+	height 190px
+	background-image url(../img/contacts-background.jpg)
+	background-position 50% 50%
+	background-repeat no-repeat
+
+.contacts-h-text
+	font-size 3.6em
+	line-height 190px
+	letter-spacing -.045em
+	font-family 'GothamProBold', sans-serif
+	color almostBlack
+
+.contacts-address
+	padding 44px 0 34px
+
+.contacts-address__text
+	font-size 1.8em
+	line-height 1.44444
+	letter-spacing -.045em
+	
+	&_thin
+		font-size 1.4em
+		letter-spacing -.025em
+		color #404040
+		opacity .6
+		line-height 1
+		margin-bottom 24px
+	
+	&_link
+		a
+			text-decoration none
+			color seriousBlue
+			font-family 'GothamProMedium', sans-serif
+			font-size inherit
+			&:hover
+				opacity .8
+
+
+.contacts-map
+	padding 10px 0 50px
+	overflow hidden
+	position relative
+	z-index 1
+
+.contacts-hgroup__primary
+	letter-spacing -.01em
+	font-size 3.6em
+	line-height 1
+	color almostBlack
+	font-family 'GothamProBold', sans-serif
+	margin-bottom 16px
+.contacts-hgroup__secondary
+	letter-spacing -.03em
+	font-size 1.8em
+	line-height 1
+	color almostBlack
+
+.map-wrap
+	padding 10px
+	border 1px solid fog
+	position relative
+	background-color almostWhite
+	&:after
+		content ""
+		display block
+		position absolute
+		width 98%
+		height 94%
+		z-index -1
+		background-color transparent
+		top 53%
+		left 50%
+		transform translateX(-50%) translateY(-50%)
+		box-shadow 0 0 15px 9px #EDEDEA
+
+
+.contacts-city-wrap
+	position relative
+	width 1058px
+	height 636px
+	margin 60px auto
+	// background-color almostBlack
+	background-image url(../img/map-contacts.png)
+
+.contacts-city__cities
+	overflow hidden
+	list-style none
+	li
+		font-size 1.4em
+		line-height 1.5
+		padding 2px 0
+
+.contacts-city__item
+	position absolute
+	&_0
+		width 332px
+		right 0
+		top 32px
+		.contacts-city__country
+			color #69cef4
+		.contacts-city__cities
+			width 50%
+			float left
+	&_1
+		left 0
+		top 190px
+		.contacts-city__country
+			color almostBlack	
+	&_2
+		left 204px
+		top 296px
+		.contacts-city__country
+			color seriousBlue	
+	&_3
+		left 514px
+		top 296px
+		.contacts-city__country
+			color juiceOrange
+
+.contacts-city__country
+	font-family 'GothamProBold', sans-serif
+	font-size 3em
+	letter-spacing -.01em
+	padding-right 32px
+	padding-bottom 10px
+	border-bottom 1px solid #b9b9b9
+		
+
+
+
+
+
+
+
+
+@import './base/responsive.styl'
