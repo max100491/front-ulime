@@ -197,10 +197,15 @@
 	<script type="text/javascript">
 		ymaps.ready(function(){
 			var map = new ymaps.Map("map", {
-				center: [55.76, 37.64],
-				zoom: 3,
+				center: [55.740916,37.609972],
+				zoom: 17,
 				controls: []
 			});
+			var ulimeMark = new ymaps.Placemark([55.740916,37.609972], {
+				hintContent: 'uLime',
+				balloonContent: 'uLime'
+			});			
+			map.geoObjects.add(ulimeMark);
 		});
 	</script>
 
