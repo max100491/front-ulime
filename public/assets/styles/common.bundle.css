@@ -1760,3 +1760,20 @@ select {
   background-repeat: no-repeat;
   background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAAS0lEQVQI12P4z8CixeL3nwECWVJYzP8zMLAwsnxg+c+SCRbqALK+szCBmJlAJlAYLPSXJRqo8j9CGCoEFQQKl4IFiyA8BiQr8mFsAE7DMHbhLL0eAAAAAElFTkSuQmCC");
 }
+.section-footer__footer-links {
+  font-size: 14px;
+  text-transform: uppercase;
+  margin: 50px 0 0;
+}
+.section-footer__footer-link {
+  padding: 0 8px 0;
+}
+.section-footer__footer-link a {
+  color: #040404;
+}
+.section-footer__footer-logos {
+  width: 245px;
+  height: 28px;
+  margin: 44px 0 0;
+  background: transparent url("../img/pay-brands.png") no-repeat center center;
+}
