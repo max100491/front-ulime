@@ -16,6 +16,7 @@
   display: block;
   border: none;
   border-radius: 4px;
+  text-align: center !important;
 }
 .button-big {
   width: 264px;
