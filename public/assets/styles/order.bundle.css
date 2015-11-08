@@ -93,7 +93,7 @@ body {
   text-transform: uppercase;
   letter-spacing: -0.025em;
   color: #88a256;
-  padding: 46px 0 32px;
+  padding: 32px 0;
 }
 .form-ord__ind-t {
   font-size: 1.8em;
@@ -677,7 +677,6 @@ body {
   background-color: #fff;
   letter-spacing: -0.045em;
   border-radius: 4px;
-  margin-bottom: 20px;
 }
 .order-input:focus {
   border-color: #ccc;
@@ -735,7 +734,6 @@ body {
   background-color: #fff;
   letter-spacing: -0.045em;
   border-radius: 4px;
-  margin-bottom: 20px;
   cursor: pointer;
 }
 .order-select:focus {
@@ -881,15 +879,12 @@ body {
 }
 .pay-card {
   width: 388px;
-  padding-left: 12px;
-  padding-right: 12px;
-  padding-top: 40px;
+  padding: 0 12px 20px;
   border-radius: 4px;
-  overflow: hidden;
   background-color: #3472c7;
 }
 .pay-card__title {
-  padding: 16px 0 14px;
+  padding: 10px 0;
   color: #fff;
 }
 .pay-card__title_notice {
