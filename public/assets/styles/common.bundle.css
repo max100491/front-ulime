@@ -1511,6 +1511,31 @@ select {
   background-color: #ff9400;
   color: #fcfcfb;
 }
+.alert {
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+.alert-variant(alert-background,
+alert-border-color,
+alert-color) {
+  background: alert-background;
+  color: alert-color;
+  border-color: alert-border-color;
+}
+.alert-success {
+  alert-variant: #dff0d8, #d6e9c6, #3c763d;
+}
+.alert-info {
+  alert-variant: #d9edf7, #bce8f1, #31708f;
+}
+.alert-warn {
+  alert-variant: #fcf8e3, #faebcc, #8a6d3b;
+}
+.alert-err {
+  alert-variant: #f2dede, #ebccd1, #a94442;
+}
 .header {
   -webkit-overflow-scrolling: touch;
   height: 70px;

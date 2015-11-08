@@ -1,0 +1,36 @@
+// Backgrouns colors
+alert-success-background = #dff0d8
+alert-info-background = #d9edf7
+alert-warn-background = #fcf8e3
+alert-err-background = #f2dede
+
+// Colors
+alert-success-color = #3c763d
+alert-info-color = #31708f
+alert-warn-color = #8a6d3b
+alert-err-color = #a94442
+// Border colors
+alert-success-border = #d6e9c6
+alert-info-border = #bce8f1
+alert-warn-border = #faebcc
+alert-err-border = #ebccd1
+
+.alert
+	padding 15px
+	margin-bottom 20px
+	border 1px solid transparent
+	border-radius 4px
+
+.alert-variant(alert-background, alert-border-color, alert-color)
+	background alert-background
+	color alert-color
+	border-color alert-border-color
+	
+.alert-success
+	alert-variant alert-success-background, alert-success-border, alert-success-color
+.alert-info
+	alert-variant alert-info-background, alert-info-border, alert-info-color
+.alert-warn
+	alert-variant alert-warn-background, alert-warn-border, alert-warn-color
+.alert-err
+	alert-variant alert-err-background, alert-err-border, alert-err-color
