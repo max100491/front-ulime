@@ -21,16 +21,16 @@ alert-err-border = #ebccd1
 	border 1px solid transparent
 	border-radius 4px
 
-.alert-variant(alert-background, alert-border-color, alert-color)
+alert-variant(alert-background, alert-border-color, alert-color)
 	background alert-background
 	color alert-color
 	border-color alert-border-color
 	
 .alert-success
-	alert-variant alert-success-background, alert-success-border, alert-success-color
+	alert-variant(alert-success-background, alert-success-border, alert-success-color)
 .alert-info
-	alert-variant alert-info-background, alert-info-border, alert-info-color
+	alert-variant(alert-info-background, alert-info-border, alert-info-color)
 .alert-warn
-	alert-variant alert-warn-background, alert-warn-border, alert-warn-color
+	alert-variant(alert-warn-background, alert-warn-border, alert-warn-color)
 .alert-err
-	alert-variant alert-err-background, alert-err-border, alert-err-color
+	alert-variant(alert-err-background, alert-err-border, alert-err-color)
