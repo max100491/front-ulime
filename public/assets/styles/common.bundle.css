@@ -1797,10 +1797,15 @@ select {
   width: 100px;
   margin: 0 auto;
 }
-.section-footer__footer-links {
-  font-size: 10px;
-  text-transform: uppercase;
+.section-footer__footer-links-container {
+  background: #fff;
+  padding: 8px 0;
   margin: 50px 0 0;
+}
+.section-footer__footer-links {
+  font-size: 11px;
+  text-transform: none;
+  line-height: 28px;
 }
 .section-footer__footer-link {
   padding: 0 16px 0;
@@ -1811,6 +1816,5 @@ select {
 .section-footer__footer-logos {
   width: 245px;
   height: 28px;
-  margin: 44px 0 0;
   background: transparent url("../img/pay-brands-small.png") no-repeat right center;
 }
