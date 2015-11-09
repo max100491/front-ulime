@@ -23,7 +23,8 @@
 			width: 70%;
 			margin: 20% auto;
 		}
-		.section-err__err-code {
+		.section-err__err-container {
+			text-align: center;
 			width: 50%;
 		}
 		.section-err__content {
@@ -36,6 +37,9 @@
 			font-size: 2000%;
 		}
 		.section-err__err-message {
+			font-size: 200%;
+		}
+		.section-err__err-text {
 			color: #ffe7c5;
 			font-size: 1000%;
 			font-weight: bold;
@@ -54,7 +58,7 @@
 			.section-err__main-container {
 				width: 100%;
 			}
-			.section-err__err-code,
+			.section-err__err-container,
 			.section-err__content {
 				width: 100%;
 				text-align: center;
@@ -70,7 +74,7 @@
 				font-size: 90%;
 				margin: 0;
 			}
-			.section-err__err-code,
+			.section-err__err-container,
 			.section-err__content {
 				width: 100%;
 				text-align: center;
@@ -78,7 +82,7 @@
 			.section-err__content div {
 				padding: 10px 0;
 			}
-			.section-err__err-message {
+			.section-err__err-text {
 				font-size: 900%;
 			}
 			.err-home-link {
@@ -90,9 +94,12 @@
 </head>
 <body>
 	<div class="section-err__main-container">
-		<div class="section-err__err-code fl">404</div>
+		<div class="section-err__err-container fl">
+			<div class="section-err__err-code">404</div>
+			<div class="section-err__err-message">Страница не найдена.</div>
+		</div>
 		<div class="section-err__content fl">
-			<div class="section-err__err-message">!Sorry</div>
+			<div class="section-err__err-text">!Sorry</div>
 			<div><img src="assets/img/404.png" alt=""></div>
 			<div>
 				<a class="err-home-link fr" href="/">На главную</a>
