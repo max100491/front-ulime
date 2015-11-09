@@ -344,7 +344,14 @@ td,
 th {
   padding: 0;
 }
-.clear-fix {
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear-fix,
+.cb {
   clear: both;
 }
 html,
