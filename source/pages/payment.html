@@ -16,12 +16,12 @@
 	<script type="text/javascript" src="assets/js/jquery.url.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.payment.js"></script>
 	<script type="text/javascript">
-	    $(document).payment({
-	        language: "ru",
-	        messageAjaxError: "Сервис временно недоступен. Попробуйте позднее.",
-	        messageTimeRemaining: "#MIN#:#SEC#",
-	        visualValidationEnabled: true
-	    });
+		$(document).payment({
+			language: "ru",
+			messageAjaxError: "Сервис временно недоступен. Попробуйте позднее.",
+			messageTimeRemaining: "#MIN#:#SEC#",
+			visualValidationEnabled: true
+		});
 	</script>
 
 
@@ -70,7 +70,7 @@
 		</div>
 
 		<div class="form-ord">
-			<form action="" method="post" class="formPayment" id="formPayment" name="PaymentForm">
+			<form action="#" method="post" class="formPayment" id="formPayment" name="PaymentForm">
 				<input type="hidden" id="expiry" >
 				<input type="hidden" id="mdOrder" >
 				<input type="hidden" id="location" value="/../">
@@ -126,7 +126,7 @@
 
 																			<div class="small-offset-1 small-4 columns">
 																				<div class="pay-card__title form-ord__title">CVV/CVV2</div>
-																				<input type="text" class="order-input" maxlength="4" name="$CVC" id="iCVC" autocomplete="off" type="password"/>
+																				<input type="password" class="order-input" maxlength="4" name="$CVC" id="iCVC" autocomplete="off" type="password"/>
 																			</div>
 
 																		</div>
@@ -177,7 +177,8 @@
 														<div class="pay-footer">
 															<div class="row">
 																<div class="small-3 columns">
-																	<button class="pay_btn form-ord__btn" id="buttonPayment">Продолжить</button>
+																	<!-- <button class="pay_btn form-ord__btn" id="buttonPayment">Продолжить</button> -->
+																	<input type="button" id="buttonPayment" class="pay_btn form-ord__btn" value="Продолжить">
 																</div>
 																<div class="small-6 columns">
 																	<div class="pay-card-text">
@@ -194,7 +195,7 @@
 													</div>
 													<div class="small-12 columns">
 														
-													</div>												
+													</div>
 												</div>
 											</div>
 											<!-- !!! -->
@@ -208,6 +209,8 @@
 						</div>
 					</div>
 				</div>
+			</form>
+			<form id="acs" method="post" action="">
 				<input type="hidden" id="MD" name="MD"/>
 				<input type="hidden" id="PaReq" name="PaReq"/>
 				<input type="hidden" id="TermUrl" name="TermUrl"/>

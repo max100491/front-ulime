@@ -11,17 +11,17 @@
 	<link rel="stylesheet" href="assets/styles/common.bundle.css">
 	<link rel="stylesheet" href="assets/styles/order.bundle.css">
 
-	<script type="text/javascript" src="assets/js/jquery-1.4.2.min.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.timers-1.2.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.url.js"></script>
-	<script type="text/javascript" src="assets/js/jquery.payment.js"></script>
+	<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+	<script type="text/javascript" src="js/jquery.timers-1.2.js"></script>
+	<script type="text/javascript" src="js/jquery.url.js"></script>
+	<script type="text/javascript" src="js/jquery.payment.js"></script>
 	<script type="text/javascript">
-		$(document).payment({
-			language: "ru",
-			messageAjaxError: "Сервис временно недоступен. Попробуйте позднее.",
-			messageTimeRemaining: "#MIN#:#SEC#",
-			visualValidationEnabled: true
-		});
+	    $(document).payment({
+	        language: "ru",
+	        messageAjaxError: "Сервис временно недоступен. Попробуйте позднее.",
+	        messageTimeRemaining: "#MIN#:#SEC#",
+	        visualValidationEnabled: true
+	    });
 	</script>
 
 
@@ -70,7 +70,7 @@
 		</div>
 
 		<div class="form-ord">
-			<form action="#" method="post" class="formPayment" id="formPayment" name="PaymentForm">
+			<form action="" method="post" class="formPayment" id="formPayment" name="PaymentForm">
 				<input type="hidden" id="expiry" >
 				<input type="hidden" id="mdOrder" >
 				<input type="hidden" id="location" value="/../">
@@ -177,7 +177,6 @@
 														<div class="pay-footer">
 															<div class="row">
 																<div class="small-3 columns">
-																	<!-- <button class="pay_btn form-ord__btn" id="buttonPayment">Продолжить</button> -->
 																	<input type="button" id="buttonPayment" class="pay_btn form-ord__btn" value="Продолжить">
 																</div>
 																<div class="small-6 columns">
@@ -209,8 +208,6 @@
 						</div>
 					</div>
 				</div>
-			</form>
-			<form id="acs" method="post" action="">
 				<input type="hidden" id="MD" name="MD"/>
 				<input type="hidden" id="PaReq" name="PaReq"/>
 				<input type="hidden" id="TermUrl" name="TermUrl"/>
@@ -282,7 +279,7 @@
 		<div class="header__m-nav"></div>
 	</div>
 
-	<script src="assets/js/order.bundle.js"></script>
+	<script src="js/order.bundle.js"></script>
 
 </body>
 </html>
