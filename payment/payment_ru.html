@@ -19,13 +19,10 @@
 		$(document).payment({
 			language: "ru",
 			messageAjaxError: "Сервис временно недоступен. Попробуйте позднее.",
-			messageTimeRemaining: "#MIN#:#SEC#",
+			messageTimeRemaining: "До окончания сессии осталось #MIN#:#SEC#",
 			visualValidationEnabled: true
 		});
 	</script>
-
-
-	
 </head>
 <body>
 
@@ -89,12 +86,17 @@
 													<div class="small-5 columns">
 														<div class="row">
 															<div class="small-12 columns">
+																<div id="indicator" style="display:none;"><img src="../../img/ajax-loader.gif" height="19" width="220" alt="indicator"></div>
+															</div>
+															<div class="small-12 columns">
 																<div class="form-ord__title">Платежные данные</div>
 
 																<div class="pay-card">
 																	<div class="small-12 columns">
 																		<div class="pay-card__title form-ord__title">Номер карты</div>
 																		<input type="text" class="order-input" name="$PAN" id="iPAN" maxlength="16" autocomplete="off"/>
+																		<br />
+																		<div id="errorBlock" style="color:red;"></div>
 																	</div>
 																	<div class="small-12 columns">
 																		<div class="row">
@@ -170,6 +172,7 @@
 												<div class="row">
 
 													<div class="small-12 columns">
+														<br />
 														<div id="numberCountdown"></div>
 														<div id="errorBlock" style="color:red;"></div>
 														<div id="infoBlock"></div>

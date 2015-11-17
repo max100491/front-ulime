@@ -33,6 +33,13 @@
   font-style: normal;
   font-weight: normal;
 }
+.valid {
+    border: 1px solid #088A08 !important;
+    background-color: #E9F7E9 !important;
+}
+.invalid{
+  border: 1px solid #8A0808 !important; background-color: #F6CECE !important;
+}
 html {
   font-family: sans-serif;
   -ms-text-size-adjust: 100%;
