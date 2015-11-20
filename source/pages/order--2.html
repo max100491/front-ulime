@@ -55,221 +55,226 @@
 		<div class="form-ord">
 			<div class="row">
 				<div class="small-12 medium-12 large-push-1 large-10 columns">
+				<div class="row f-ext_h">
 					<div class="row f-ext_h">
-						<div class="small-8 columns">
-							<div class="row">
-								<!-- !!! -->
-								<div class="small-12 columns">
+						<div class="row f-ext_h">
+							<div class="row f-ext_h">
+								<div class="medium-8 columns">
 									<div class="row">
-										<div class="small-5 columns">
+									<!-- !!! -->
+										<div class="small-12 columns">
+											<div class="row f-ext_h">
+												<div class="medium-5 columns">
+													<div class="row">
+														<div class="small-12 columns">
+															<div class="form-ord__title">Ваши данные</div>
+
+															<div class="field-contactform-name required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-name" class="order-input" name="ContactForm[name]" required="">
+																	<label class="order-label" style="font-weight:normal" for="contactform-name">Имя</label>
+																	<div class="help-block"></div>
+																</div>
+															</div>
+
+															<div class="field-contactform-phone required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-phone" class="order-input" name="	ContactForm[phone]" placeholder="Телефон" data-plugin-inputmask="inputmask_4b876f6e">
+																	<div class="help-block"></div>
+																</div>
+															</div>
+
+															<div class="field-contactform-email required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-email" class="order-input" name="ContactForm[email]" required="">
+																	<label class="order-label" style="font-weight:normal" for="contactform-email">E-mail</label>
+																	<div class="help-block"></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="medium-7 columns">
+													<div class="form-ord__title">Ваш адрес</div>
+
+													<!-- Select city -->
+
+													<div class="field-contactform-city_id required">
+														<div class="order-form-group">
+															<select id="contactform-city_id" class="order-select" name="ContactForm[city_id]" required="">
+																<option value="1">Москва</option>
+																<option value="2">Калининград</option>
+																<option value="3">Нижний Новгород</option>
+																<option value="4">Воронеж</option>
+																<option value="5">Волгоград</option>
+																<option value="6">Ростов-на-Дону</option>
+																<option value="7">Казань</option>
+																<option value="8">Красноярск</option>
+																<option value="9">Новосибирск</option>
+																<option value="10">Омск</option>
+																<option value="11">Пермь</option>
+																<option value="12">Самара</option>
+																<option value="13">Санкт-Петербург</option>
+																<option value="14">Уфа</option>
+																<option value="15">Екатеринбург</option>
+																<option value="16">Челябинск</option>
+															</select>
+															<div class="help-block"></div>
+														</div>
+													</div>
+
+													<!-- Street -->
+
+													<div class="field-contactform-street required">
+														<div class="order-form-group">
+																<input type="text" id="contactform-street" class="order-input" name="ContactForm[street]" required="">
+															<label class="order-label" style="font-weight:normal" for="contactform-street">Улица</label>
+															<div class="help-block"></div>
+														</div>
+													</div>
+
+													<!-- Address -->
+
+													<div class="address-small">
+														<div class="address-small__item">
+											    			<div class="field-contactform-house required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-house" class="order-input" name="ContactForm[house]" required="">
+																	<label class="order-label" style="font-weight:normal" for="contactform-house">Дом</label>
+																	<div class="help-block"></div>
+																</div>
+															</div>
+														</div>
+														<div class="address-small__item">
+															<div class="field-contactform-apartment required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-apartment" class="order-input" name="ContactForm[apartment]" required="">
+																	<label class="order-label" style="font-weight:normal" for="contactform-apartment">Квартира</label>
+																	<div class="help-block"></div>
+																</div>
+															</div>
+														</div>
+														<div class="address-small__item">
+															<div class="field-contactform-floor required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-floor" class="order-input" name="ContactForm[floor]" required="">
+																	<label class="order-label" style="font-weight:normal" for="contactform-floor">Этаж</label>
+																	<div class="help-block"></div>
+																</div>
+															</div>
+														</div>
+														<div class="address-small__item">
+															<div class="field-contactform-intercom required">
+																<div class="order-form-group">
+																	<input type="text" id="contactform-intercom" class="order-input" name="ContactForm[intercom]" required="">
+																	<label class="order-label" style="font-weight:normal" for="contactform-intercom">Код</label>
+																	<div class="help-block"></div>
+																</div>												
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
 											<div class="row">
 												<div class="small-12 columns">
-													<div class="form-ord__title">Ваши данные</div>
-
-													<div class="field-contactform-name required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-name" class="order-input" name="ContactForm[name]" required="">
-															<label class="order-label" style="font-weight:normal" for="contactform-name">Имя</label>
-															<div class="help-block"></div>
-														</div>
-													</div>
-
-													<div class="field-contactform-phone required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-phone" class="order-input" name="ContactForm[phone]" placeholder="Телефон" data-plugin-inputmask="inputmask_4b876f6e">
-															<div class="help-block"></div>
-														</div>
-													</div>
-
-													<div class="field-contactform-email required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-email" class="order-input" name="ContactForm[email]" required="">
-															<label class="order-label" style="font-weight:normal" for="contactform-email">E-mail</label>
-															<div class="help-block"></div>
-														</div>
-													</div>
-
+													<button type="submit" class="form-ord__btn">Продолжить</button>
 												</div>
 											</div>
 										</div>
-										<div class="small-7 columns">
-											<div class="form-ord__title">Ваш адрес</div>
-
-											<!-- Select city -->
-
-											<div class="field-contactform-city_id required">
-												<div class="order-form-group">
-													<select id="contactform-city_id" class="order-select" name="ContactForm[city_id]" required="">
-														<option value="1">Москва</option>
-														<option value="2">Калининград</option>
-														<option value="3">Нижний Новгород</option>
-														<option value="4">Воронеж</option>
-														<option value="5">Волгоград</option>
-														<option value="6">Ростов-на-Дону</option>
-														<option value="7">Казань</option>
-														<option value="8">Красноярск</option>
-														<option value="9">Новосибирск</option>
-														<option value="10">Омск</option>
-														<option value="11">Пермь</option>
-														<option value="12">Самара</option>
-														<option value="13">Санкт-Петербург</option>
-														<option value="14">Уфа</option>
-														<option value="15">Екатеринбург</option>
-														<option value="16">Челябинск</option>
-													</select>
-													<div class="help-block"></div>
-												</div>
-											</div>
-
-											<!-- Street -->
-
-											<div class="field-contactform-street required">
-												<div class="order-form-group">
-														<input type="text" id="contactform-street" class="order-input" name="ContactForm[street]" required="">
-													<label class="order-label" style="font-weight:normal" for="contactform-street">Улица</label>
-													<div class="help-block"></div>
-												</div>
-											</div>
-
-											<!-- Address -->
-
-											<div class="address-small">
-												<div class="address-small__item">
-											    	<div class="field-contactform-house required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-house" class="order-input" name="ContactForm[house]" required="">
-															<label class="order-label" style="font-weight:normal" for="contactform-house">Дом</label>
-															<div class="help-block"></div>
-														</div>
-													</div>
-												</div>
-												<div class="address-small__item">
-													<div class="field-contactform-apartment required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-apartment" class="order-input" name="ContactForm[apartment]" required="">
-															<label class="order-label" style="font-weight:normal" for="contactform-apartment">Квартира</label>
-															<div class="help-block"></div>
-														</div>
-													</div>
-												</div>
-												<div class="address-small__item">
-													<div class="field-contactform-floor required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-floor" class="order-input" name="ContactForm[floor]" required="">
-															<label class="order-label" style="font-weight:normal" for="contactform-floor">Этаж</label>
-															<div class="help-block"></div>
-														</div>
-													</div>
-												</div>
-												<div class="address-small__item">
-													<div class="field-contactform-intercom required">
-														<div class="order-form-group">
-															<input type="text" id="contactform-intercom" class="order-input" name="ContactForm[intercom]" required="">
-															<label class="order-label" style="font-weight:normal" for="contactform-intercom">Код</label>
-															<div class="help-block"></div>
-														</div>												
-													</div>
-												</div>
-											</div>
-										</div>
+										<!-- !!! -->
 									</div>
+								</div>
+
+								<div class="small-4 columns">
 									<div class="row">
-										<a class="form-ord__btn-gray" href="index">Назад</a>
-										<button type="submit" class="form-ord__btn">Продолжить</button>
-									</div>
-								</div>
-								<!-- !!! -->
-							</div>
-						</div>
+										<!-- !!! -->
+										<div class="order-det-nest">
+											<div class="order-det">
+												<div class="order-det_top">Детали заказа</div>
+												<div class="order-det_body">
+													<div class="small-12 columns">
 
-						<div class="small-4 columns">
-							<div class="row">
-								<!-- !!! -->
-								<div class="order-det-nest">
-									<div class="order-det">
-										<div class="order-det_top">Детали заказа</div>
-										<div class="order-det_body">
-											<div class="small-12 columns">
-
-												<div class="row">
-													<div class="small-6 columns">
 														<div class="row">
-															<div class="order-time" id="order-time">15:30</div>
+															<div class="small-6 columns">
+																<div class="row">
+																	<div class="order-time" id="order-time">15:30</div>
+																</div>
+															</div>
+															<div class="small-6 columns">
+																<div class="row">
+																	<div class="order-date">
+																		<div class="order-day" id="order-day">Суббота</div>
+																		<div class="order-date-number" id="order-date-number">26 сентября</div>
+																	</div>
+																</div>
+															</div>
 														</div>
-													</div>
-													<div class="small-6 columns">
+
 														<div class="row">
-															<div class="order-date">
-																<div class="order-day" id="order-day">Суббота</div>
-																<div class="order-date-number" id="order-date-number">26 сентября</div>
+															<div class="decor-nest">
+																<div class="small-6 columns">
+																	<div class="row">Время</div>
+																</div>
+																<div class="small-6 columns">
+																	<div class="row">Тариф</div>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="small-6 columns">
+																<div class="row">
+																	<span class="order-text-decor order-duration" id="order-duration">3.5</span>
+																</div>
+															</div>
+															<div class="small-6 columns">
+																<div class="row">
+																	<span class="order-text-decor order-taks" id="order-taks">550</span>
+																</div>
+															</div>
+														</div>
+
+														<div class="row">
+															<div class="small-12 columns">
+																<div class="row">
+																	<div class="order-additional-task">
+																		<span>Дополнительно</span>
+																		<ul>
+																			<li>Мытье холодильника</li>
+																			<li>Кошки</li>
+																			<li>Мойка вещи</li>
+																			<li>Собаки</li>
+																			<li>Уборка холодильника</li>
+																			<li>Разбор гардероба</li>
+																		</ul>
+																	</div>
+																</div>
+															</div>
+														</div>
+
+															<div class="row">
+																<div class="decor-nest">
+																	<div class="small-12 columns">
+																		<div class="row">Итого</div>
+																	</div>
+																</div>
+															</div>
+
+															<div class="row">
+																<div class="small-12 columns">
+																	<div class="row">
+																		<span class="order-text-decor order-total" id="order-total">2599</span>
+																	</div>
+																</div>
 															</div>
 														</div>
 													</div>
 												</div>
-
-												<div class="row">
-													<div class="decor-nest">
-														<div class="small-6 columns">
-															<div class="row">Время</div>
-														</div>
-														<div class="small-6 columns">
-															<div class="row">Тариф</div>
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="small-6 columns">
-														<div class="row">
-															<span class="order-text-decor order-duration" id="order-duration">3.5</span>
-														</div>
-													</div>
-													<div class="small-6 columns">
-														<div class="row">
-															<span class="order-text-decor order-taks" id="order-taks">550</span>
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="small-12 columns">
-														<div class="row">
-															<div class="order-additional-task">
-																<span>Дополнительно</span>
-																<ul>
-																	<li>Мытье холодильника</li>
-																	<li>Кошки</li>
-																	<li>Мойка вещи</li>
-																	<li>Собаки</li>
-																	<li>Уборка холодильника</li>
-																	<li>Разбор гардероба</li>
-																</ul>
-															</div>
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="decor-nest">
-														<div class="small-12 columns">
-															<div class="row">Итого</div>
-														</div>
-													</div>
-												</div>
-
-												<div class="row">
-													<div class="small-12 columns">
-														<div class="row">
-															<span class="order-text-decor order-total" id="order-total">2599</span>
-														</div>
-													</div>
-												</div>
-
 											</div>
+										<!-- !!! -->
 										</div>
 									</div>
 								</div>
-								<!-- !!! -->
 							</div>
 						</div>
 					</div>
