@@ -87,13 +87,87 @@ body {
   letter-spacing: -0.045em;
   color: #242424;
 }
+.breadcrumbs {
+  float: right;
+  width: 250px;
+  padding: 0px;
+}
+.breadcrumbs ul {
+  float: right;
+}
+.breadcrumbs ul li {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  padding: 11px;
+  margin: 0 20px;
+  background-color: #fff;
+  border: 2px solid #ff9400;
+  border-radius: 100%;
+  font-family: 'GothamProRegular', sans-serif;
+  font-size: 1.4em;
+  list-style: none;
+  text-align: center;
+}
+.breadcrumbs ul li:before,
+.breadcrumbs ul li:after {
+  content: '';
+  position: absolute;
+  top: 45%;
+  width: 22px;
+  height: 2px;
+}
+.breadcrumbs ul li:nth-child(1):before {
+  display: none;
+}
+.breadcrumbs ul li:nth-child(1):after {
+  left: 38px;
+  background-color: #ff9400;
+}
+.breadcrumbs ul li:nth-child(2):after {
+  left: 38px;
+  background-color: #ff9400;
+}
+.breadcrumbs ul li:nth-child(2):before {
+  right: 38px;
+  background-color: #ff9400;
+}
+.breadcrumbs ul li:nth-child(3) {
+  margin-right: 0;
+  border-color: #d2d2d2;
+  color: #d2d2d2;
+}
+.breadcrumbs ul li:nth-child(3):before {
+  content: '';
+  position: absolute;
+  top: 45%;
+  right: 38px;
+  width: 22px;
+  height: 2px;
+  background-color: #d2d2d2;
+}
 .form-ord__title {
+  display: inline-block;
+  width: 50%;
   font-family: 'GothamProBold', sans-serif;
   font-size: 1.4em;
   text-transform: uppercase;
   letter-spacing: -0.025em;
   color: #88a256;
   padding: 32px 0;
+}
+.has-account {
+  display: inline-block;
+  width: 49%;
+  text-align: right;
+}
+.has-account a {
+  font-family: 'GothamProRegular', sans-serif;
+  font-size: 1.2em;
+  color: #b0b0af;
+}
+.has-account a:hover {
+  color: #7e7e7d;
 }
 .form-ord__ind-t {
   font-size: 1.8em;
@@ -587,7 +661,7 @@ body {
   padding: 10px 0;
   border-top: 1px solid #e2e2e1;
   border-bottom: 1px solid #e2e2e1;
-  margin: 28px 0 12px;
+  margin: 23px 0 12px;
 }
 .order-time {
   font-size: 3.6em;
@@ -661,7 +735,7 @@ body {
   padding-top: 38px;
 }
 .address-small__item {
-  width: 24.2%;
+  width: 24.3%;
   display: inline-block !important;
 }
 .address-small__item div {
@@ -699,6 +773,7 @@ body {
 }
 .order-input:valid +.order-label,
 .order-input:focus +.order-label {
+  background-color: #fcfcfb;
   color: #555;
   transform: translate3d(12px, -6px, 0);
   font-size: 1.1em;

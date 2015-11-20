@@ -47,13 +47,85 @@ body
 		letter-spacing -.045em
 		color almostBlack
 
+.breadcrumbs
+	float right
+	width 250px
+	padding 0px
+	
+	ul 
+		float right
+		
+		li
+			display inline-block
+			position relative
+			width 40px
+			padding 11px 
+			margin 0 20px
+			background-color white
+			border 2px solid juiceOrange
+			border-radius 100%
+			font-family 'GothamProRegular', sans-serif
+			font-size 1.4em
+			list-style none
+			text-align center
+			
+			&:before
+			&:after
+				content ''
+				position: absolute;
+				top: 45%;
+				width: 22px;
+				height: 2px;
+			
+			&:nth-child(1)
+				&:before
+					display none
+				&:after
+					left: 38px;
+					background-color juiceOrange
+					
+			&:nth-child(2)
+				&:after
+					left: 38px;
+					background-color juiceOrange
+				&:before
+					right: 38px;
+					background-color juiceOrange
+				
+			&:nth-child(3)
+				margin-right 0
+				border-color #d2d2d2
+				color #d2d2d2
+				&:before
+					content ''
+					position: absolute;
+					top: 45%;
+					right: 38px;
+					width: 22px;
+					height: 2px;
+					background-color #d2d2d2
+
 .form-ord__title
+	display inline-block
+	width 50%
 	font-family 'GothamProBold', sans-serif
 	font-size 1.4em
 	text-transform uppercase
 	letter-spacing -.025em
 	color #88a256
 	padding 32px 0
+	
+.has-account 
+	display inline-block
+	width 49%
+	text-align right
+	a 
+		font-family 'GothamProRegular', sans-serif
+		font-size 1.2em
+		color #b0b0af
+		
+		&:hover 
+			color #b0b0af - 50
 
 .form-ord__ind-t
 	font-size 1.8em
@@ -483,7 +555,7 @@ body
 	padding 10px 0
 	border-top 1px solid #e2e2e1
 	border-bottom 1px solid #e2e2e1
-	margin 28px 0 12px
+	margin 23px 0 12px
 
 .order-time
 	font-size 3.6em
@@ -548,7 +620,7 @@ body
 	
 .address-small
 	&__item
-		width 24.2%
+		width 24.3%
 		display: inline-block !important
 		div
 			margin-top 0px
@@ -586,6 +658,7 @@ body
 	&:valid
 	&:focus
 		+.order-label
+			background-color #fcfcfb
 			color #555
 			transform translate3d(12px, -6px, 0)
 			font-size 1.1em
@@ -638,7 +711,6 @@ body
 	cursor pointer
 	&:focus
 		outline none
-
 
 .banner
 	background-color #fcfcfb
