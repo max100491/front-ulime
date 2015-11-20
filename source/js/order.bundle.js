@@ -16,7 +16,6 @@ form.submit(function(e){
 	console.log(e);
 })
 
-
 ;(function(){
 	//flatCounter
 	var inputVal = $('#form-ord__range_value');

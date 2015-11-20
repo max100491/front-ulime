@@ -103,7 +103,7 @@ body
 	width 110px
 	padding-left 10px
 
-.form-ord__btn
+.form-ord__btn, .form-ord__btn-gray
 	display inline-block
 	text-decoration none
 	width 260px
@@ -122,6 +122,10 @@ body
 		color juiceOrange
 		background-color transparent
 
+.form-ord__btn-gray
+	background #c0c0c0
+	border #c0c0c0
+    
 .form-ord__range_nest
 	overflow hidden
 .form-ord__range
@@ -542,8 +546,17 @@ body
 	width 100%
 	padding-top 38px
 	
+.address-small
+	&__item
+		width 24.2%
+		display: inline-block !important
+		div
+			margin-top 0px
+	
 .order-form-group
 	position relative
+	margin 10px 0
+	
 .order-form-group.valid
 	input
 		border-color seriousBlue
@@ -625,7 +638,6 @@ body
 	cursor pointer
 	&:focus
 		outline none
-
 
 
 .banner

@@ -145,7 +145,8 @@ body {
   width: 110px;
   padding-left: 10px;
 }
-.form-ord__btn {
+.form-ord__btn,
+.form-ord__btn-gray {
   display: inline-block;
   text-decoration: none;
   width: 260px;
@@ -161,9 +162,14 @@ body {
   margin-bottom: 78px;
   margin-top: 64px;
 }
-.form-ord__btn:hover {
+.form-ord__btn:hover,
+.form-ord__btn-gray:hover {
   color: #ff9400;
   background-color: transparent;
+}
+.form-ord__btn-gray {
+  background: #c0c0c0;
+  border: #c0c0c0;
 }
 .form-ord__range_nest {
   overflow: hidden;
@@ -654,8 +660,16 @@ body {
   width: 100%;
   padding-top: 38px;
 }
+.address-small__item {
+  width: 24.2%;
+  display: inline-block !important;
+}
+.address-small__item div {
+  margin-top: 0px;
+}
 .order-form-group {
   position: relative;
+  margin: 10px 0;
 }
 .order-form-group.valid input {
   border-color: #3472c7;
