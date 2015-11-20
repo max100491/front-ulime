@@ -693,7 +693,7 @@ body {
   border-radius: 4px;
 }
 .order-input:focus {
-  border-color: #ccc;
+  border-color: #427bcb;
   box-shadow: inset 0 0 6px 0px #f7f7f7;
   outline: none !important;
 }
