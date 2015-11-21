@@ -55,6 +55,7 @@ body {
   width: 100%;
   height: auto;
   position: relative;
+  background-color: #fcfcfb;
 }
 .row_c {
   margin: 0 -0.6rem;
@@ -474,6 +475,7 @@ body {
 .section-orders__orders-list {
   padding: 25px 0;
   margin: 40px 0;
+  background-color: #fff;
 }
 .section-orders__orders-list-wrapper {
   padding: 0 20px;
@@ -527,6 +529,7 @@ body {
 }
 .pro-link-unactive {
   border-left: 0;
+  color: #787878;
 }
 .orders-label-dark,
 .orders-label-grey {
@@ -546,6 +549,7 @@ body {
 .orders-delay input,
 .orders-rate input {
   padding: 10px 10px 8px;
+  font-weight: bold;
 }
 .orders-address {
   width: 250px;
@@ -553,6 +557,7 @@ body {
 }
 .orders-address-text {
   padding: 10px 0;
+  font-weight: bold;
 }
 .orders-datetime {
   width: 350px;
@@ -574,6 +579,7 @@ body {
 .orders-datetime-date {
   text-align: left;
   font-size: 16px;
+  font-weight: bold;
 }
 .orders-set-delay {
   display: block;
@@ -589,8 +595,15 @@ body {
 .orders-delay {
   font-size: 36px;
 }
+.orders-delay sup {
+  font-size: 14px;
+  top: -15px;
+}
 .orders-label-grey {
   color: #adadad;
+}
+.orders-label-dark {
+  color: #242424;
 }
 .orders-rate {
   cursor: pointer;
@@ -607,6 +620,18 @@ body {
 .orders-rate-negative {
   background: transparent url("../img/rate-negative.png") no-repeat center center;
 }
+.orders-rate-change {
+  position: absolute;
+  width: 100px;
+  margin: 0 -50px;
+  padding: 2px 17px;
+  text-align: right;
+  border-right: 1px solid #dadada;
+  color: #b5b5b4;
+  font-family: 'GothamProRegular';
+  line-height: 1.5em;
+  font-size: 14px;
+}
 .orders-indicator-notapproved {
   background: #ff9400;
 }
@@ -622,7 +647,7 @@ body {
   border-color: #000;
 }
 .bordered-bottom {
-  border-bottom: 1px #adadad solid;
+  border-bottom: 1px #dadada solid;
 }
 .order-det-nest {
   width: 346px !important;

@@ -16,6 +16,7 @@ body
 	width 100%
 	height auto
 	position relative
+	background-color #fcfcfb
 .row_c
 	margin: 0 -0.6rem;
 	max-width: none;
@@ -384,6 +385,7 @@ body
 		&-list
 			padding 25px 0
 			margin 40px 0
+			background-color #fff
 			&-wrapper
 				padding 0 20px
 		&-info
@@ -426,6 +428,7 @@ body
 	
 .pro-link-unactive
 	border-left 0
+	color #787878
 	
 .orders-label-dark,
 .orders-label-grey
@@ -439,6 +442,7 @@ body
 .orders-rate
 	input
 		padding 10px 10px 8px
+		font-weight bold
 	font-size 18px
 	padding 0 20px
 .orders-address
@@ -446,6 +450,7 @@ body
 	padding-left 0
 	&-text
 		padding 10px 0
+		font-weight bold
 .orders-datetime
 	input
 		width 140px
@@ -462,6 +467,8 @@ body
 	&-date
 		text-align left
 		font-size 16px
+		font-weight bold
+		
 .orders-set-delay
 	display block
 	padding 10px 10px 8px
@@ -476,8 +483,13 @@ body
 	color #242424
 .orders-delay
 	font-size 36px
+	sup
+		font-size 14px
+		top -15px
 .orders-label-grey
 	color #adadad
+.orders-label-dark
+	color almostBlack
 .orders-rate
 	cursor pointer
 	&-negative,
@@ -489,6 +501,17 @@ body
 		border-right 1px #adadad solid
 	&-negative
 		background transparent url('../img/rate-negative.png') no-repeat center center
+	&-change
+		position absolute
+		width 100px
+		margin 0 -50px
+		padding 2px 17px
+		text-align right
+		border-right 1px solid #dadada
+		color #b5b5b4
+		font-family 'GothamProRegular'
+		line-height 1.5em
+		font-size 14px
 
 .orders-indicator
 	&-notapproved
@@ -505,7 +528,7 @@ body
 .orders-status-success-border
 	border-color black
 .bordered-bottom
-	border-bottom 1px #adadad solid
+	border-bottom 1px #dadada solid
 // END
 
 .order-det-nest
