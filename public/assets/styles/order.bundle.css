@@ -411,8 +411,9 @@ body {
   display: block;
   position: relative;
   background-color: #ddd;
-  background-size: 100%;
   background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: center;
   border-radius: 4px;
   transition: background-color ease 0.04s;
 }
