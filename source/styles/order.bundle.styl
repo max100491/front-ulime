@@ -33,9 +33,8 @@ body
 	background-color #fcfcfb
 	min-height 620px
 
-
-
 .head-bar-info
+.head-bar
 	background-color fog
 	padding-top 78px
 	padding-bottom 36px
@@ -47,13 +46,22 @@ body
 		letter-spacing -.045em
 		color almostBlack
 
+.head-bar
+	padding 50px 0
+
 .breadcrumbs
 	float right
 	width 250px
 	padding 0px
 	
+	@media only screen and (max-width: 40em)
+		float none
+		margin 0 auto
+		text-align: center;
 	ul 
 		float right
+		@media only screen and (max-width: 40em)
+			float none
 		
 		li
 			display inline-block
@@ -369,9 +377,10 @@ body
 				padding 0 0 0 20px
 			&-pro-link
 				position relative
-				color #adadad
 				padding 22px 30px
 				border 1px #adadad solid
+				color #adadad
+				font-weight bold
 		&-list
 			padding 25px 0
 			margin 40px 0
@@ -410,16 +419,20 @@ body
 			padding 18px 0
 			border-radius 4px
 .pro-link-active
-	color #3472c7
-	border-color #3472c7
 	margin 0 -1px 0 0
+	background-color #fff
+	border-color #3472c7
+	color #000
+	
 .pro-link-unactive
 	border-left 0
+	
 .orders-label-dark,
 .orders-label-grey
 	text-transform uppercase
 	font-size 14px
 	font-weight bold
+	
 .orders-address,
 .orders-datetime,
 .orders-delay,
@@ -502,6 +515,9 @@ body
 	width 346px !important
 	transform translateY(-92px)
 	padding-left 80px
+	@media only screen and (max-width: 40em)
+		width 100% !important
+		padding-left 0px;
 	// z-index 1001
 .order-det-nest.unfixed
 	position absolute
