@@ -82,6 +82,15 @@ body {
 .section-profile__profile-header {
   padding: 30px 0;
 }
+@media only screen and (max-width: 40em) {
+  .section-profile__profile-header {
+    padding: 7px 0;
+  }
+  .section-profile__profile-header div {
+    width: 100%;
+    padding: 15px;
+  }
+}
 .section-profile__profile-header-title {
   font-size: 36px;
   font-weight: bold;
@@ -102,6 +111,12 @@ body {
   border: 1px #adadad solid;
   color: #adadad;
   font-weight: bold;
+}
+@media only screen and (max-width: 40em) {
+  .section-profile__profile-header-pro-link {
+    padding: 14px 12px;
+    font-size: 0.8em;
+  }
 }
 .section-profile__profile-list {
   padding: 25px 0;
@@ -172,7 +187,7 @@ body {
   opacity: 0.3;
   transition: all ease 0.09s;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 64em) {
   .section-profile__profile-info-control a,
   .section-profile__profile-address-control a,
   .section-profile__profile-password-control a {
@@ -198,7 +213,7 @@ body {
   opacity: 1;
   color: #636363;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 40em) {
   .section-profile__profile-info-control,
   .section-profile__profile-address-control,
   .section-profile__profile-password-control {
@@ -212,14 +227,14 @@ body {
   width: 195px;
   padding: 9px 0;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 40em) {
   .section-profile__profile-info-control-btn,
   .section-profile__profile-address-control-btn,
   .section-profile__profile-password-control-btn {
     float: none;
   }
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 40em) {
   .section-profile__profile-info-control-btn {
     margin-top: 20px;
   }
@@ -233,7 +248,7 @@ body {
 .section-profile__profile-password-control-btn {
   margin-top: 167px;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 40em) {
   .section-profile__profile-password-control-btn {
     margin-top: 20px;
   }
@@ -272,7 +287,7 @@ body {
   background-repeat: no-repeat;
   background-position: 96% center;
 }
-@media only screen and (max-width: 60em) {
+@media only screen and (max-width: 64em) {
   .input-wrap {
     width: 100%;
   }
