@@ -25,7 +25,7 @@ gulp.task('build:html', function(){
 gulp.task('build:fonts', function(){
 
 	return gulp.src('./source/fonts/**/*')
-		.pipe(gulp.dest('./public/assets/fonts/'));
+		.pipe(gulp.dest('./pugulpblic/assets/fonts/'));
 });
 
 

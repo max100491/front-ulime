@@ -1,0 +1,150 @@
+.discounts-select {
+  padding-top: 57px;
+  padding-bottom: 51px;
+  background-color: #f0f0f0;
+}
+.discounts-select_header {
+  float: left;
+  width: 140px;
+  padding-top: 7px;
+  margin-right: 20px;
+  font-size: 36px;
+  line-height: 40px;
+  font-family: 'GothamProBold', sans-serif;
+  font-weight: bold;
+  letter-spacing: -0.06em;
+}
+.discounts-select_item {
+  float: left;
+  width: 178px;
+  padding-left: 25px;
+  padding-top: 15px;
+  padding-right: 28px;
+  padding-bottom: 19px;
+  color: #787878;
+  font-family: 'GothamProMedium', sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  border: 2px solid #b2b2b2;
+  background: #f0f0f0;
+  box-sizing: border-box;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+}
+.discounts-select_item_active {
+  color: #000;
+  background: #fff;
+  border: 2px solid #3472c7;
+}
+.discounts-select_item:nth-child(3) {
+  width: 145px;
+  margin-right: 197px;
+  border-left: none;
+}
+.discounts-select_button {
+  float: left;
+  display: block;
+  width: 290px;
+  height: 57px;
+  padding-left: 30px;
+  padding-top: 20px;
+  padding-right: 35px;
+  padding-bottom: 17px;
+  border-radius: 4px;
+  color: #fff;
+  background-color: #ff9400;
+  text-decoration: none;
+  font-size: 1.6em;
+  font-family: 'GothamProMedium', sans-serif;
+  letter-spacing: -0.005em;
+  border: 1px solid #ff9400;
+  transition: color ease 0.08s, background-color ease 0.08s;
+}
+.discounts-select_button:hover {
+  background-color: transparent;
+  border: 1px solid #ff9400;
+  color: #ff9400;
+}
+.discounts-description {
+  padding-top: 42px;
+  padding-bottom: 267px;
+  background-image: url("../img/discounts-background.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}
+.discounts-description_header {
+  margin-bottom: 39px;
+  font-size: 30px;
+  line-height: 39px;
+  font-family: 'GothamProMedium', sans-serif;
+  letter-spacing: -0.03em;
+}
+.discounts-description_balance {
+  font-family: 'GothamProMedium', sans-serif;
+  font-size: 23px;
+  line-height: 26px;
+  letter-spacing: -0.03em;
+}
+.discounts-description_balance span {
+  color: #ff9400;
+  text-transform: uppercase;
+}
+.left-col {
+  width: 560px;
+}
+.share {
+  padding-bottom: 42px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #898989;
+}
+.share_link {
+  float: left;
+  width: 332px;
+  margin-right: 20px;
+  padding-left: 19px;
+  padding-top: 18px;
+  padding-bottom: 12px;
+  color: #97a1aa;
+  border-radius: 3px;
+  border: 1px solid #c4c4c4;
+}
+.share_description {
+  margin-top: 20px;
+  font-family: 'MyriadPro', sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #898989;
+  letter-spacing: -0.06em;
+}
+.share-social {
+  float: left;
+  width: 208px;
+}
+.share-social_item {
+  display: inline-block;
+  vertical-align: top;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 7px;
+  background: url("../img/icon-sprite.png") no-repeat;
+}
+.share-social_item:nth-child(4n+4) {
+  margin-right: 0;
+}
+.share-social_twitter {
+  background-color: #00acee;
+  background-position: -124px -11px;
+}
+.share-social_fb {
+  background-color: #23589b;
+  background-position: -6px -12px;
+}
+.share-social_vk {
+  background-color: #1c6997;
+  background-position: -182px -11px;
+}
+.share-social_mail {
+  background-color: #ff3337;
+  background-position: -61px -10px;
+}
