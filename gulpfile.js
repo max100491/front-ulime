@@ -4,6 +4,7 @@ var gulp = require('gulp'),
 	plumber = require('gulp-plumber'),
 	autoprefixer = require('gulp-autoprefixer'),
 	minifyCss = require('gulp-minify-css'),
+	concatCss = require('gulp-concat-css'),
 	rigger = require('gulp-rigger');
 
 var webpack = require("webpack"),
@@ -35,6 +36,20 @@ gulp.task('build:css', function(){
 		.pipe(plumber())
 		.pipe(stylus())
 		.pipe(gulp.dest('./public/assets/styles/'));
+});
+
+gulp.task('build:css:concat', function(){
+
+	return gulp.src('./source/styles/*.styl')
+		.pipe(plumber())
+		.pipe(stylus())
+		.pipe(autoprefixer({
+			browsers: ['last 6 versions'],
+			cascade: false
+		}))
+		.pipe(minifyCss({compatibility: 'ie9'}))
+		.pipe(concatCss("common.css"))
+    	.pipe(gulp.dest('./public/assets/styles/'));
 });
 
 gulp.task('build:css:o', function(){

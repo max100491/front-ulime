@@ -5,11 +5,11 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="assets/styles/common.bundle.css">
-	<link rel="stylesheet" href="assets/styles/profile.bundle.css">
+	<link rel="stylesheet" href="assets/styles/common.css">
 	<title>Личный кабинет</title>
 </head>
 <body>
-	<div id="page">
+	<div id="profile-page">
 		<div class="header">		
 			<div class="row">
 				<div class="small-12 medium-12 large-push-1 large-10 columns">
@@ -56,12 +56,14 @@
 						<div class="row">
 							<div class="row">
 								<div class="section-profile__profile-header">
-									<div class="section-profile__profile-header-title left">Мои заказы</div>
+									<div class="section-profile__profile-header-title left">Мой профиль</div>
 									<div class="section-profile__profile-header-pro-links left">
 										<a href="#" class="section-profile__profile-header-pro-link pro-link-active left">Домработницы</a>
 											<a href="#" class="section-profile__profile-header-pro-link pro-link-unactive left">Химчистка</a>
 									</div>
-									<a href="#" class="section-profile__profile-header-action-link button button-big button-juice right">Пригласить домработницу</a>
+									<div>
+										<a href="#" class="section-profile__profile-header-action-link button button-big button-juice right">Пригласить домработницу</a>
+									</div>
 									<div class="clear-fix"></div>
 								</div>
 							</div>
@@ -70,28 +72,113 @@
 				</div>
 			</div>
 		</div>
-		<div class="row">
+		<div class="row content-section">
 			<div class="push-1 small-12 medium-10 columns">
 				<div class="row">
 					<div class="row">
 						<div class="row">
-							<div class="section-profile__profile-list">
-								<div class="section-profile__profile-list-wrapper">
-									<div class="section-profile__profile-info">
-										<div class="section-profile__profile-info-box">
-											<div class="medium-12 columns">
-												<div class="row">
-													<div class="section-profile__profile-info-title profile-label-dark">Мои данные</div>
-												</div>
+							<!-- Info item -->
+							<div class="medium-12 columns section-profile__profile-list bordered-bottom">
+								<div class="section-profile__profile-info">
+									<div class="small-12 medium-12 columns">
+										<div class="row">
+											<div class="section-profile__profile-info-title">Мои данные</div>
+										</div>
+									</div>
+									<div class="small-12 medium-9 columns">
+										<div class="row">
+											<div class="section-profile__profile-info-details">
+												<ul>
+													<li>Ваше имя: <span>Дарья</span></li>
+													<li>Email: <span>mail@mail.ru</span></li>
+													<li>Контактный телефон: <span>+7(999)999-99-99</li>
+												</ul>
 											</div>
-											<div class="medium-8 columns">
-												<div class="row">
-													<div class="section-profile__profile-info-details">
-														<div>Ваше имя: <span>Дарья</span></div>
-														<div>Email: <span>mail@mail.ru</span></div>
-														<div>Контактный телефон: <span>+7(999)999-99-99</span></div>
+										</div>
+									</div>
+									<div class="small-12 medium-3 columns">
+										<div class="row">
+											<div class="section-profile__profile-info-control">
+												<a href="">
+													Удалить карту
+												</a>
+												<a href="">
+													Изменить заказ
+												</a>
+												<button class="section-profile__profile-info-control-btn button">Редактировать</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Address item -->
+							<div class="medium-12 columns section-profile__profile-list bordered-bottom">
+								<div class="section-profile__profile-address">
+									<div class="small-12 medium-12 columns">
+										<div class="row">
+											<div class="section-profile__profile-address-title">Мой адрес</div>
+										</div>
+									</div>
+									<div class="small-12 medium-9 columns">
+										<div class="row">
+											<div class="section-profile__profile-address-details">
+												<ul>
+													<li><span>Москва, Ветошный переулок, 2/1/1</span></li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="small-12 medium-3 columns">
+										<div class="row">
+											<div class="section-profile__profile-address-control">
+												<button class="section-profile__profile-address-control-btn button">Изменить адрес</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<!-- Password item -->
+							<div class="medium-12 columns section-profile__profile-list bordered-bottom">
+								<div class="section-profile__profile-password">
+									<div class="small-12 medium-12 columns">
+										<div class="row">
+											<div class="section-profile__profile-password-title">Смена пароля</div>
+										</div>
+									</div>
+									<div class="small-12 medium-9 columns">
+										<div class="row">
+											<div class="section-profile__profile-password-form">
+												<div class="medium-6 columns">
+													<div class="row">
+														<label for="newPass">Новый пароль</label>
+														<div class="input-wrap valid">
+															<input type="password" id="newPass">
+														</div>
 													</div>
 												</div>
+												<div class="medium-6 columns">
+													<div class="row">
+														<label for="currentPass">Текущий пароль</label>
+														<div class="input-wrap valid">
+															<input type="password" id="currentPass">
+														</div>
+													</div>
+												</div>
+												<div class="medium-6 columns">
+													<div class="row">
+														<label for="confirmPass">Подтверждение пароля</label>
+														<div class="input-wrap nonvalid">
+															<input type="password" id="confirmPass">
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="small-12 medium-3 columns">
+										<div class="row">
+											<div class="section-profile__profile-password-control">
+												<button class="section-profile__profile-password-control-btn button">Сохранить</button>
 											</div>
 										</div>
 									</div>

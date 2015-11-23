@@ -51,7 +51,7 @@ body {
   font-family: 'GothamProRegular', sans-serif;
   background-color: #fff;
 }
-#page {
+#profile-page {
   width: 100%;
   height: auto;
   position: relative;
@@ -173,6 +173,9 @@ body {
   letter-spacing: -0.025em;
   color: #88a256;
   padding: 32px 0;
+}
+.form-ord__title-full-width {
+  width: 100%;
 }
 .has-account {
   display: inline-block;

@@ -6,7 +6,13 @@
 .right
 	text-align right
 
-
+//////////////
+//For mobile//
+//////////////
+@media only screen and (max-width: 40em)
+	.row
+		padding 0 7px
+	
 body
 	font-family 'GothamProRegular', sans-serif
 	background-color #fff
@@ -16,47 +22,37 @@ body
 	width 100%
 	height auto
 	position relative
-.row_c
-	margin: 0 -0.6rem;
-	max-width: none;
-	width: auto;
-.row_c_r
-	margin: 0 -0.6rem 0 0;
-	max-width: none;
-	width: auto;
-.row_c_l
-	margin: 0 0 0 -0.6rem;
-	max-width: none;
-	width: auto;
 
-.form-ord
-	background-color #fcfcfb
-	min-height 620px
+.content-section
+	padding 65px 7px
+	
+	@media only screen and (max-width: 40em)
+		padding 0px 7px	
 
-.head-bar-info
 .head-bar
+	padding 22px 0
 	background-color fog
-	padding-top 78px
-	padding-bottom 36px
 	position relative
 	
 	&__title
 		font-family 'GothamProBold', sans-serif
 		font-size 3.6em
 		letter-spacing -.045em
-		color almostBlack
-
-.head-bar
-	padding 50px 0
 
 .section-profile
 	&__profile
 		&-header
 			padding 30px 0
+			@media only screen and (max-width: 40em)
+				padding 7px 0
+				div
+					width 100%
+					padding 15px
 			&-title
 				font-size 36px
 				font-weight bold
 				padding 12px 20px 0 0
+				letter-spacing -.035em
 			&-pro-links,
 			&-action-link
 				font-size 16px
@@ -69,57 +65,104 @@ body
 				border 1px #adadad solid
 				color #adadad
 				font-weight bold
+				@media only screen and (max-width: 40em)
+					padding 14px 12px
+					font-size 0.8em
 		&-list
 			padding 25px 0
-			margin 40px 0
 			background-color #fff
 			&-wrapper
-				padding 0 20px
+				padding 0
 		&-info
+		&-address
+		&-password
 			padding 0 0 20px
 			&-title
 				display block
+				padding-top 10px
 				font-family 'GothamProBold', sans-serif
 				font-size 1.4em
 				text-transform uppercase
 				letter-spacing -.025em
 				color #88a256
 			&-details
+				padding 25px 0 0
 				font-family 'GothamProMedium', sans-serif
 				font-size 18px
-				div
-					padding 9px 0
+				
+				ul li
+					padding 6px 0
+					list-style none
 				span
 					font-family 'GothamPro', sans-serif
+			&-form
+				padding 25px 0 0
+				
+				label
+					line-height 2.4em
+					font-family 'GothamProMedium', sans-serif
+					font-size 18px
 					
-		&-summary
-			padding 20px 0 0
-		&-housekeeper-info
-			font-size 1.4em
-			font-weight bold
-			&-title
-				text-transform uppercase
-				color black
-				padding 0 0 5px
-			&-name
-				color #3472c7
-				font-size 18px
-				padding 5px 0 0
-		&-price
-			color #88a256
-			font-size 36px
-			padding 12px 40px 8px
-			sup
-				color #404040
-				font-size 14px
-				top -1.1em
-		&-indicator
-			width 180px
-			color white
-			font-size 16px
-			text-align center
-			padding 18px 0
-			border-radius 4px
+			&-control
+				a
+					position relative
+					display block
+					background-repeat no-repeat
+					background-position right top
+					height 30px
+					margin 8px 0 8px 60px
+					text-align center
+					color #fff
+					font-family 'GothamProMedium', sans-serif
+					font-size 12px
+					opacity 0.3
+					transition all ease .09s
+					@media only screen and (max-width: 64em)
+						margin 8px 0
+						color link
+					
+					&:nth-child(1)
+						background-image url('../img/close-btn.png')
+						line-height 2.3em
+					&:nth-child(2)
+						background-image url('../img/edit-btn.png')
+						line-height 3.3em
+					
+					&:hover
+						opacity 1
+						color link
+						
+				@media only screen and (max-width: 40em)
+					text-align center
+					
+				&-btn
+					float right
+					width 195px
+					padding 9px 0
+						
+					@media only screen and (max-width: 40em)
+						float none
+	
+		// Remarks
+		&-info
+			&-control
+				&-btn
+					@media only screen and (max-width: 40em)
+						margin-top 20px
+		&-address
+			&-details
+				padding 35px 0 0
+			&-control
+				&-btn
+					margin-top 35px
+		&-password
+			&-control
+				&-btn
+					margin-top 167px
+					
+					@media only screen and (max-width: 40em)
+						margin-top 20px
+			
 .pro-link-active
 	margin 0 -1px 0 0
 	background-color #fff
@@ -129,3 +172,49 @@ body
 .pro-link-unactive
 	border-left 0
 	color #787878
+
+.bordered-bottom
+	border-bottom: 1px solid border;
+	
+.button
+	text-align center
+	color #fff
+	font-size 1.6em
+	border-radius 4px
+	border 1px solid juiceOrange
+	background-color juiceOrange
+	transition all ease .09s
+		
+	&:hover
+		color juiceOrange
+		background-color transparent
+	
+.input-wrap
+	width 270px
+	height 46px
+	border 1px solid #c8c8c8
+	border-radius 4px
+	background-repeat no-repeat
+	background-position 96% center
+	
+	@media only screen and (max-width: 64em)
+		width 100%
+	
+	&.valid
+		background-image url('../img/valid-form.png')
+	&.nonvalid
+		background-image url('../img/nonvalid-form.png')
+		
+	input
+		display block
+		position relative
+		width 88%
+		height 100%
+		padding 0 12px
+		margin 0
+		border none
+		font-family 'GothamProRegular'
+		font-size 1.6em
+		line-height 1
+		background-color transparent
+		letter-spacing -.045em
