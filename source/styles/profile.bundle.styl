@@ -33,21 +33,15 @@ body
 	background-color #fcfcfb
 	min-height 620px
 
-.head-bar-info
 .head-bar
+	padding 22px 0
 	background-color fog
-	padding-top 78px
-	padding-bottom 36px
 	position relative
 	
 	&__title
 		font-family 'GothamProBold', sans-serif
 		font-size 3.6em
 		letter-spacing -.045em
-		color almostBlack
-
-.head-bar
-	padding 50px 0
 
 .section-profile
 	&__profile
@@ -57,6 +51,7 @@ body
 				font-size 36px
 				font-weight bold
 				padding 12px 20px 0 0
+				letter-spacing -.035em
 			&-pro-links,
 			&-action-link
 				font-size 16px
@@ -71,10 +66,10 @@ body
 				font-weight bold
 		&-list
 			padding 25px 0
-			margin 40px 0
+			margin 67px 0
 			background-color #fff
 			&-wrapper
-				padding 0 20px
+				padding 0
 		&-info
 			padding 0 0 20px
 			&-title
@@ -85,12 +80,58 @@ body
 				letter-spacing -.025em
 				color #88a256
 			&-details
+				padding 25px 0 0
 				font-family 'GothamProMedium', sans-serif
 				font-size 18px
-				div
-					padding 9px 0
+				
+				ul li
+					padding 6px 0
+					list-style none
 				span
 					font-family 'GothamPro', sans-serif
+			&-control
+				a
+					position relative
+					display block
+					background-repeat no-repeat
+					background-position right top
+					height 30px
+					margin 8px 0 8px 80px
+					text-align center
+					color #fff
+					font-family 'GothamProMedium', sans-serif
+					font-size 12px
+					opacity 0.3
+					transition all ease .09s
+					
+					&:nth-child(1)
+						background-image url('../img/close-btn.png')
+						line-height 2.3em
+					&:nth-child(2)
+						background-image url('../img/edit-btn.png')
+						line-height 3.3em
+					
+					&:hover
+						opacity 1
+						color link
+				&-btn
+					float right
+					font-size 1.6em
+					padding 9px 35px
+					text-align center
+					color #fff
+					border-radius 4px
+					border 1px solid juiceOrange
+					background-color juiceOrange
+					transition all ease .09s
+					
+					&:hover
+						color juiceOrange
+						background-color transparent
+					
+	&:hover
+		color juiceOrange
+		background-color transparent
 					
 		&-summary
 			padding 20px 0 0
@@ -129,3 +170,6 @@ body
 .pro-link-unactive
 	border-left 0
 	color #787878
+
+.bordered-bottom
+	border-bottom: 1px solid border;
