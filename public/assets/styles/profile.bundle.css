@@ -219,11 +219,16 @@ body {
     float: none;
   }
 }
-.section-profile__profile-info-control-btn {
-  margin-top: 20px;
+@media only screen and (max-width: 60em) {
+  .section-profile__profile-info-control-btn {
+    margin-top: 20px;
+  }
+}
+.section-profile__profile-address-details {
+  padding: 35px 0 0;
 }
 .section-profile__profile-address-control-btn {
-  margin-top: 20px;
+  margin-top: 35px;
 }
 .section-profile__profile-password-control-btn {
   margin-top: 167px;
