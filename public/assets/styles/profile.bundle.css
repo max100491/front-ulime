@@ -61,6 +61,14 @@ body {
   height: auto;
   position: relative;
 }
+.content-section {
+  padding: 65px 7px;
+}
+@media only screen and (max-width: 40em) {
+  .content-section {
+    padding: 0px 7px;
+  }
+}
 .head-bar {
   padding: 22px 0;
   background-color: #f0f0ee;
@@ -111,6 +119,7 @@ body {
 .section-profile__profile-address-title,
 .section-profile__profile-password-title {
   display: block;
+  padding-top: 10px;
   font-family: 'GothamProBold', sans-serif;
   font-size: 1.4em;
   text-transform: uppercase;
