@@ -6,6 +6,12 @@
 .right
 	text-align right
 
+//////////////
+//For mobile//
+//////////////
+@media only screen and (max-width: 40em)
+	.row
+		padding 0 7px
 
 body
 	font-family 'GothamProRegular', sans-serif
@@ -16,22 +22,6 @@ body
 	width 100%
 	height auto
 	position relative
-.row_c
-	margin: 0 -0.6rem;
-	max-width: none;
-	width: auto;
-.row_c_r
-	margin: 0 -0.6rem 0 0;
-	max-width: none;
-	width: auto;
-.row_c_l
-	margin: 0 0 0 -0.6rem;
-	max-width: none;
-	width: auto;
-
-.form-ord
-	background-color #fcfcfb
-	min-height 620px
 
 .head-bar
 	padding 22px 0
@@ -71,6 +61,7 @@ body
 				padding 0
 		&-info
 		&-address
+		&-password
 			padding 0 0 20px
 			&-title
 				display block
@@ -89,6 +80,14 @@ body
 					list-style none
 				span
 					font-family 'GothamPro', sans-serif
+			&-form
+				padding 25px 0 0
+				
+				label
+					line-height 2.4em
+					font-family 'GothamProMedium', sans-serif
+					font-size 18px
+					
 			&-control
 				a
 					position relative
@@ -96,13 +95,16 @@ body
 					background-repeat no-repeat
 					background-position right top
 					height 30px
-					margin 8px 0 8px 80px
+					margin 8px 0 8px 60px
 					text-align center
 					color #fff
 					font-family 'GothamProMedium', sans-serif
 					font-size 12px
 					opacity 0.3
 					transition all ease .09s
+					@media only screen and (max-width: 60em)
+						margin 8px 0
+						color link
 					
 					&:nth-child(1)
 						background-image url('../img/close-btn.png')
@@ -114,10 +116,15 @@ body
 					&:hover
 						opacity 1
 						color link
+						
+				@media only screen and (max-width: 60em)
+					text-align center
+					
 				&-btn
 					float right
 					font-size 1.6em
-					padding 9px 35px
+					width 195px
+					padding 9px 0
 					text-align center
 					color #fff
 					border-radius 4px
@@ -129,11 +136,25 @@ body
 						color juiceOrange
 						background-color transparent
 						
-		// Remarks 
+					@media only screen and (max-width: 60em)
+						float none
+	
+		// Remarks
+		&-info
+			&-control
+				&-btn
+					margin-top 20px
 		&-address
 			&-control
 				&-btn
 					margin-top 20px
+		&-password
+			&-control
+				&-btn
+					margin-top 167px
+					
+					@media only screen and (max-width: 60em)
+						margin-top 20px
 					
 	&:hover
 		color juiceOrange
@@ -167,6 +188,7 @@ body
 			text-align center
 			padding 18px 0
 			border-radius 4px
+			
 .pro-link-active
 	margin 0 -1px 0 0
 	background-color #fff
@@ -179,3 +201,33 @@ body
 
 .bordered-bottom
 	border-bottom: 1px solid border;
+	
+.input-wrap
+	width 270px
+	height 46px
+	border 1px solid #c8c8c8
+	border-radius 4px
+	background-repeat no-repeat
+	background-position 96% center
+	
+	@media only screen and (max-width: 60em)
+		width 100%
+	
+	&.valid
+		background-image url('../img/valid-form.png')
+	&.nonvalid
+		background-image url('../img/nonvalid-form.png')
+		
+	input
+		display block
+		position relative
+		width 88%
+		height 100%
+		padding 0 12px
+		margin 0
+		border none
+		font-family 'GothamProRegular'
+		font-size 1.6em
+		line-height 1
+		background-color transparent
+		letter-spacing -.045em
