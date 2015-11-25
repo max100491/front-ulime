@@ -11,48 +11,58 @@
   <link rel="stylesheet" href="assets/styles/common.bundle.css">
   <link rel="stylesheet" href="assets/styles/landing.bundle.css">
   <link rel="stylesheet" href="assets/styles/discounts.bundle.css">
+  <script src="js/jquery-2.0.3.min.js"></script>
 </head>
 
 <body>
   <div id="page">
-    <div class="header">		
-    	<div class="row">
-    		<div class="small-12 medium-12 large-push-1 large-10 columns">
-    			<div class="row f-ext_h">
-    				<div class="row f-ext_h">
-    					<div class="row f-ext_h">						
-    						<!-- !!! -->
-    							<!-- <a href="/public" class="header__logo">uLime</a> -->
-    							<a href="/public" class="header__logo"><img src="assets/img/ulime-logo-white.png" alt=""></a>
-    								<div class="header__dropdown">
-    									<ul class="header__routes">
-    										<li><a class="header__routes_decorate" href="">Москва</a></li>
-    									</ul>
-    								</div>
-    								<div class="header__auth">
-    									<ul class="header__routes">
-    										<li><a href="">Регистрация</a></li>
-    										<li><a class="header__routes_decorate" href="">Вход</a></li>
-    									</ul>
-    								</div>
-    								<nav class="header__nav">
-    									<ul class="header__routes">
-    										<li><a href="">Вопросы</a></li>
-    										<li><a href="contacts.html">Контакты</a></li>
-    										<li><a href="#a-prices">Цены</a></li>
-    									</ul>
-    								</nav>
-    								<div class="header__hmbrgr">
-    									<div></div>
-    									<div></div>
-    									<div></div>
-    								</div>
-    						<!-- !!! -->
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
+    <div class="header">
+      <div class="row">
+        <div class="small-12 medium-12 large-push-1 large-10 columns">
+          <div class="row f-ext_h">
+            <div class="row f-ext_h">
+              <div class="row f-ext_h">
+                <!-- !!! -->
+                  <!-- <a href="/public" class="header__logo">uLime</a> -->
+                  <a href="/public" class="header__logo"><img src="assets/img/ulime-logo-white.png" alt=""></a>
+                    <div class="header__dropdown">
+                      <ul class="header__routes">
+                        <li><a class="header__routes_decorate" href="">Москва</a></li>
+                      </ul>
+                    </div>
+                    <div class="header__auth">
+                      <ul class="header__routes header__routes_auth">
+                        <li>
+                          <a id="headerLogin" class="header__routes_decorate header__routes_login" href="">Дарья</a>
+                          <ul class="header-auth-list" id="headerList">
+                            <li><a href="#">Регулярная уборка</a></li>
+                            <li><a href="#">Мои домработницы</a></li>
+                            <li><a href="#">Мой профиль</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Скидки</a></li>
+                            <li class="header-auth-list__exit"><a href="#">Выход</a></li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </div>
+                    <nav class="header__nav">
+                      <ul class="header__routes">
+                        <li><a href="">Вопросы</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="#a-prices">Цены</a></li>
+                      </ul>
+                    </nav>
+                    <div class="header__hmbrgr">
+                      <div></div>
+                      <div></div>
+                      <div></div>
+                    </div>
+                <!-- !!! -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
 
     <div class="discounts-select">
@@ -115,68 +125,6 @@
         </div>
       </div>
     </div>
-
-    <div class="contain-box contain-box_no-padding footer">
-    	<div class="row">
-    		<div class="push-1 small-12 medium-10 columns">
-    			<div class="row">
-    				<div class="row">
-    					<div class="row">
-    						
-    						<!-- !!! -->
-    							<div class="small-3 columns">
-    								<div class="footer__logo"><img src="assets/img/ulime-logo-blue.png" alt=""></div>
-    								<a href="" class="footer__add-link">Стать домработницей</a>
-    							</div>
-    							<div class="small-3 columns">
-    								<div class="footer__text">Мобильные приложения</div>
-    								<a href="" class="footer__rounded-button">iOS</a>
-    								<a href="" class="footer__rounded-button">Android</a>
-    								<div style="padding:6px 0;color: #adadad;">в разработке</div>
-    							</div>
-    							<div class="small-2 columns">
-    								<div class="footer__text">Мы в соцсетях</div>
-    								<a href="" class="footer__social footer__social_fb"></a>
-    								<a href="" class="footer__social footer__social_vk"></a>
-    							</div>
-    							<div class="small-4 columns">
-    								<div class="right">
-    									<div class="footer__number">+7 (499)390-66-13</div>
-    									<div class="footer__text footer__text_near"><a href="mailto:info@ulime.ru">info@ulime.ru</a></div>
-    									<div class="footer__text">&#169; 2015 uLime</div>
-    								</div>
-    							</div>
-    						<!-- !!! -->
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    	<div class="section-footer__footer-links-container small-12 columns">
-    		<div class="row">
-    			<div class="push-1 small-12 medium-10 columns">
-    				<div class="row">
-    					<div class="row">
-    						<div class="section-footer__footer-links fl">
-    							<div class="section-footer__footer-link fl" style="padding-left: 0;">
-    								<a href="#">Лицензионное соглашение</a>
-    							</div>
-    							<div class="left">|</div>
-    							<div class="section-footer__footer-link fl">
-    								<a href="#">Политка конфиденциальности</a>
-    							</div>
-    							<div class="left">|</div>
-    							<div class="section-footer__footer-link fl">
-    								<a href="#">Платежная информация</a>
-    							</div>
-    							<div class="clear-fix"></div>
-    						</div>
-    						<div class="section-footer__footer-logos right"></div>
-    					</div>
-    				</div>
-    			</div>
-    		</div>
-    	</div>
-    </div>
   </div>
+  <script src="assets/js/dropdown.bundle.js"></script>
 </body>

@@ -1622,7 +1622,6 @@ select {
 .header__routes a {
   color: #fff;
   font-family: 'GothamProRegular';
-  display: inline;
   text-decoration: none;
   font-size: 1.8em;
   letter-spacing: -0.045em;
@@ -1670,6 +1669,56 @@ select {
 }
 .header a:not([class*="header__logo"]):not([class*="header__routes_decorate"]):hover {
   opacity: 0.86;
+}
+.header__routes_auth {
+  position: relative;
+  margin-top: 12px;
+}
+.header__routes_auth .header__routes_login {
+  display: inline-block;
+  vertical-align: top;
+  width: 205px;
+}
+.header__routes_auth .header__routes_login::after {
+  content: '';
+  display: block;
+  width: 10px;
+  height: 6px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  background-repeat: no-repeat;
+  background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAARUlEQVQIHQXBMQ2EUABAsQdyMICLM8DK8icSEjwg9zYmUtpk8ZMku1WZ/DEkNx5zMsBw47UpyQC8NilJLnBKSpLsDkn6AA6uT9bzONjDAAAAAElFTkSuQmCC");
+}
+.header-auth-list {
+  position: absolute;
+  left: 19px;
+  top: 40px;
+  display: none;
+  width: 207px;
+  z-index: 5;
+  font-size: inherit;
+  border-radius-bottom: 3px;
+}
+.header-auth-list li {
+  display: block;
+  background: #fff;
+}
+.header-auth-list a {
+  display: block;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #3472c7;
+}
+.header-auth-list a:hover {
+  background: #b7cae3;
+  font-family: 'GothamProMedium';
+  padding-top: 15px;
+}
+.header-auth-list__exit {
+  border-top: 1px solid #3472c7;
 }
 .footer {
   background-color: #f0f0f0;

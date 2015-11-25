@@ -26,7 +26,7 @@ gulp.task('build:html', function(){
 gulp.task('build:fonts', function(){
 
 	return gulp.src('./source/fonts/**/*')
-		.pipe(gulp.dest('./pugulpblic/assets/fonts/'));
+		.pipe(gulp.dest('./public/assets/fonts/'));
 });
 
 
@@ -86,7 +86,8 @@ gulp.task('build:js:w', function(){
 			watch: true,
 			entry: {
 				'landing.bundle': './source/js/landing.bundle.js',
-				'order.bundle': './source/js/order.bundle.js'
+				'order.bundle': './source/js/order.bundle.js',
+				'dropdown.bundle': './source/js/dropdown.bundle.js'
 			},
 			output: {
 				filename: './js/[name].js'
@@ -113,7 +114,8 @@ gulp.task('build:js', function(){
 			// watch: true,
 			entry: {
 				'landing.bundle': './source/js/landing.bundle.js',
-				'order.bundle': './source/js/order.bundle.js'
+				'order.bundle': './source/js/order.bundle.js',
+				'dropdown.bundle': './source/js/dropdown.bundle.js'
 			},
 			output: {
 				filename: './js/[name].js'

@@ -2,7 +2,7 @@
   padding-top: 73px;
   padding-bottom: 110px;
   background: #4e5153 url("../img/bonus-background.jpg") center top;
-  background-size: 100% 726px;
+  background-size: cover;
 }
 .bonus-box_image {
   margin-bottom: 13px;

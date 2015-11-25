@@ -30,7 +30,7 @@
 	li
 		margin-left 16px
 		margin-right 16px
-	
+
 .header__dropdown
 	float left
 	// margin-top 10px
@@ -73,7 +73,6 @@
 .header__routes a
 	color #fff
 	font-family 'GothamProRegular'
-	display inline
 	text-decoration none
 	font-size 1.8em
 	letter-spacing -.045em
@@ -110,7 +109,7 @@
 	width 220px
 	// height 100%
 	top 0
-	bottom 0	
+	bottom 0
 	right -@width
 	transform translate3d(0,0,0)
 	transition transform .2s
@@ -124,3 +123,49 @@
 			&:not([class*="header__routes_decorate"])
 				&:hover
 					opacity .86
+
+.header__routes_auth
+	position relative
+	margin-top 12px
+	.header__routes_login
+		display inline-block
+		vertical-align top
+		width 205px
+		&::after
+			content ''
+			display block
+			width 10px
+			height 6px
+			position absolute
+			right 10px
+			top 50%
+			transform translateY(-50%)
+			background-repeat no-repeat
+			background-image url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAGCAQAAABQ+cdNAAAARUlEQVQIHQXBMQ2EUABAsQdyMICLM8DK8icSEjwg9zYmUtpk8ZMku1WZ/DEkNx5zMsBw47UpyQC8NilJLnBKSpLsDkn6AA6uT9bzONjDAAAAAElFTkSuQmCC')
+
+
+.header-auth-list
+	position absolute
+	left 19px
+	top 40px
+	display none
+	width 207px
+	z-index 5
+	font-size inherit
+	border-radius-bottom 3px
+	li
+		display block
+		background #fff
+	a
+		display block
+		padding-left 20px
+		padding-top 15px
+		padding-bottom 15px
+		color #3472c7
+		&:hover
+			background #b7cae3
+			font-family 'GothamProMedium'
+			padding-top 15px
+	&__exit
+		border-top 1px solid #3472c7
+
