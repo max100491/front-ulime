@@ -87,7 +87,8 @@ gulp.task('build:js:w', function(){
 			entry: {
 				'landing.bundle': './source/js/landing.bundle.js',
 				'order.bundle': './source/js/order.bundle.js',
-				'dropdown.bundle': './source/js/dropdown.bundle.js'
+				'dropdown.bundle': './source/js/dropdown.bundle.js',
+				'questions-category.bundle': './source/js/questions-category.bundle.js'
 			},
 			output: {
 				filename: './js/[name].js'
@@ -115,7 +116,8 @@ gulp.task('build:js', function(){
 			entry: {
 				'landing.bundle': './source/js/landing.bundle.js',
 				'order.bundle': './source/js/order.bundle.js',
-				'dropdown.bundle': './source/js/dropdown.bundle.js'
+				'dropdown.bundle': './source/js/dropdown.bundle.js',
+				'questions-category.bundle': './source/js/questions-category.bundle.js'
 			},
 			output: {
 				filename: './js/[name].js'

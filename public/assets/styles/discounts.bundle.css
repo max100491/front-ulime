@@ -132,6 +132,9 @@
 .share-social_item:nth-child(4n+4) {
   margin-right: 0;
 }
+.share-social_item:hover {
+  opacity: 0.8;
+}
 .share-social_twitter {
   background-color: #00acee;
   background-position: -124px -11px;
