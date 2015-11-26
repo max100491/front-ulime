@@ -1,0 +1,73 @@
+.map-header
+  padding-top 53px
+  padding-bottom 58px
+  &__text
+    margin 0
+    font-family 'GothamProBold', sans-serif
+    font-size 3.6em
+    line-height 1.1111
+    letter-spacing -0.06em
+
+.map
+  height 991px
+  padding-top 70px
+  background-image url(../img/map-background.jpg)
+  background-repeat no-repeat
+  background-size cover
+
+.map-pages
+  margin-bottom 141px
+  &__item
+    font-family 'GothamProRegular', sans-serif
+    font-size 1.8em
+    line-height 1.5555
+    letter-spacing -0.06em
+    color #000
+    a
+      color #000
+      &:hover
+        text-decoration underline
+      &:active
+        color #ff9400
+        opacity .8
+  &__item_main
+    color #ff9400
+    font-family 'GothamProBold', sans-serif
+    font-size 3.6em
+    line-height 1.1111
+    letter-spacing -0.03em
+    a
+      color #ff9400
+      &:hover
+        text-decoration underline
+  ul
+    margin 0
+    padding 0
+    list-style none
+
+.map-cities
+  width 450px
+  &__title
+    margin 0
+    margin-bottom 4px
+    color #ff9400
+    font-family 'GothamProBold', sans-serif
+    font-size 3.6em
+    line-height 1.1111
+    letter-spacing -0.05em
+  &__item
+    font-family 'GothamProRegular', sans-serif
+    font-size 1.8em
+    line-height 1.5555
+    letter-spacing -0.03em
+  a
+    color #000
+    &:hover
+      text-decoration underline
+    &:active
+      color #ff9400
+      opacity .8
+
+@media screen and (max-width: 485px)
+  .map-cities
+    width 300px
