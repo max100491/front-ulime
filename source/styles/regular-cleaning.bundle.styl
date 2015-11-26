@@ -1,0 +1,228 @@
+.reg-clean
+  padding-top 63px
+  padding-bottom 323px
+  &__header
+    margin 0
+    margin-bottom 84px
+    font-family 'GothamProBold', sans-serif
+    font-size 3.6em
+    line-height 1.111
+    letter-spacing -0.05em
+  &__save-options
+    display inline-block
+    width 164px
+    height 45px
+    margin-right 20px
+    margin-bottom 18px
+    padding-top 8px
+    padding-bottom 15px
+    color #fff
+    background-color #3472c7
+    font-family 'GothamProMedium', sans-serif
+    font-size 16px
+    line-height 1.75
+    letter-spacing -0.01em
+    text-align center
+    border 1px solid #3472c7
+    border-radius 2px
+    transition: color ease 0.08s, background-color ease 0.08s;
+    &:hover
+      background-color #fff
+      color #3472c7
+  &__calendar
+    position relative
+    display inline-block
+    padding-left 32px
+    font-family 'GothamProRegular', sans-serif
+    font-size 12px
+    line-height 1.4
+    letter-spacing -0.05em
+    &:hover
+      color #80b3f8
+      &::before
+        opacity 0.7
+    &::before
+      position absolute
+      left 0
+      top 0
+      content ''
+      width 26px
+      height 26px
+      background-image url(../img/icon-calendar.png)
+      background-repeat no-repeat
+
+
+
+.left-col
+  width 595px
+  float left
+  margin-right 119px
+
+.right-col
+  width 271px
+  float left
+
+.choose-days,
+.choose-freq
+  font-size 0
+  &__header
+    margin 0
+    margin-bottom 22px
+    color #88a256
+    font-family 'GothamProBold', sans-serif
+    font-size 14px
+    line-height 1.285
+    letter-spacing -0.03em
+  &__item
+    display inline-block
+    width 134px
+    margin-right 20px
+    margin-bottom 18px
+    padding-top 15px
+    padding-bottom 15px
+    color #000
+    font-family 'GothamProRegular', sans-serif
+    font-size 14px
+    line-height 1.214
+    letter-spacing -0.03em
+    text-align center
+    border 1px solid #d2d2d2
+    border-radius 2px
+    &_active
+      color #fff
+      background-color #4d4d4d
+      border-color #4d4d4d
+    &:nth-of-type(2n+2)
+      margin-right 0
+    &:hover
+      border-color #464644
+    &:active
+      color #fff
+      background-color #4d4d4d
+      border-color #4d4d4d
+
+
+.choose-days
+  float left
+  width 300px
+
+.choose-freq
+  float right
+  width 175px
+  &__item
+    width 164px
+    height 47px
+    &:nth-of-type(1)
+      padding-top 6px
+
+.details-wrap
+  padding-left 20px
+  padding-right 26px
+
+.order-details
+  padding-top 12px
+  &__header
+    margin-bottom 26px
+    padding-top 23px
+    padding-left 26px
+    padding-bottom 25px
+    font-family 'GothamProMedium', sans-serif
+    font-size 1.8em
+    line-height 1.3333
+    letter-spacing -0.03em
+    color #fff
+    background-color #88a256
+
+.order-details-when
+  margin-bottom 14px
+  padding-bottom 20px
+  border-bottom: 1px solid #e2e2e1;
+  &__time
+    float left
+    width 85px
+    margin-right 36px
+    font-family 'GothamProRegular', sans-serif
+    font-size 3.6em
+    line-height 1.111
+    letter-spacing -0.03em
+  &__date
+    float left
+    width 100px
+    font-family 'GothamProMedium', sans-serif
+    font-size 1.6em
+    line-height 1.0625
+    letter-spacing -0.03em
+    span
+      color #ff9400
+
+.order-details-number
+  padding-left 6px
+  padding-bottom 32px
+  border-bottom 1px solid #e2e2e1
+  &__top-line
+    margin-bottom 5px
+    padding-bottom 11px
+    font-family 'GothamProMedium', sans-serif
+    font-size 1.4em
+    line-height 1.1428
+    letter-spacing -0.03em
+    border-bottom: 1px solid #e2e2e1;
+    .time,
+    .rate
+      display inline-block
+    .time
+      margin-right 67px
+  &__hours,
+  &__rate
+    color #3472c7
+    font-family 'GothamProRegular', sans-serif
+    font-size 3.6em
+    line-height 1.111
+    letter-spacing -0.03em
+    span
+      display inline-block
+      vertical-align top
+      margin-top 3px
+      color #000
+      font-size 0.3888em
+      line-height 1.1428
+  &__hours
+    width 100px
+    float left
+  &__rate
+    width 115px
+    float right
+  &__include
+    margin-top 15px
+    color #404040
+    font-family 'GothamProRegular', sans-serif
+    font-size 1.4em
+    line-height 1.2857
+    letter-spacing -0.04em
+
+.order-details-amount
+  padding-top 14px
+  &__top-line
+    margin-bottom 8px
+    padding-left 7px
+    padding-bottom 12px
+    font-family 'GothamProMedium', sans-serif
+    font-size 1.4em
+    line-height 1.1428
+    letter-spacing -0.03em
+    border-bottom 1px solid #e2e2e1
+  &__total
+    padding-left 3px
+    color #88a256
+    font-family 'GothamProRegular', sans-serif
+    font-size 3.6em
+    line-height 1.111
+    letter-spacing -0.03em
+    span
+      display inline-block
+      vertical-align top
+      margin-top 3px
+      color #000
+      font-size 0.3888em
+      line-height 1.1428
+

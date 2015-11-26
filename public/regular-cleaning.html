@@ -10,11 +10,11 @@
 
   <link rel="stylesheet" href="assets/styles/common.bundle.css">
   <link rel="stylesheet" href="assets/styles/landing.bundle.css">
-  <link rel="stylesheet" href="assets/styles/discounts.bundle.css">
+  <link rel="stylesheet" href="assets/styles/regular-cleaning.bundle.css">
 </head>
 
 <body>
-  <div id="page">
+  <div class="page">
     <div class="header">
       <div class="row">
         <div class="small-12 medium-12 large-push-1 large-10 columns">
@@ -63,63 +63,65 @@
         </div>
       </div>
     </div>
-
-    <div class="discounts-select">
+    <div class="reg-clean">
       <div class="row">
         <div class="small-12 medium-12 large-10 large-push-1 columns">
           <div class="row f-ext_h">
             <div class="row f-ext_h">
               <div class="row f-ext_h">
-
-                <!-- !!! -->
-                  <div class="row">
-                    <div class="small-12 columns clearfix">
-                      <div class="discounts-select_header">Скидки</div>
-                      <div class="discounts-select_item discounts-select_item_active">Домработницы</div>
-                      <div class="discounts-select_item ">Химчистка</div>
-                      <a href="#" class="discounts-select_button">Пригласить домработницу</a>
+                <div class="row">
+                  <div class="small-12 columns clearfix">
+                    <div class="left-col clearfix">
+                      <h1 class="reg-clean__header">Регулярная уборка</h1>
+                      <div class="choose-days">
+                        <h3 class="choose-days__header">Выберите дни недели</h3>
+                        <a href="#" class="choose-days__item">Понедельник</a>
+                        <a href="#" class="choose-days__item choose-days__item_active">Вторник</a>
+                        <a href="#" class="choose-days__item">Среда</a>
+                        <a href="#" class="choose-days__item">Четверго</a>
+                        <a href="#" class="choose-days__item choose-days__item_active">Пятница</a>
+                        <a href="#" class="choose-days__item">Суббота</a>
+                        <a href="#" class="choose-days__item choose-days__item_active">Воскресенье</a>
+                      </div>
+                      <div class="choose-freq">
+                        <h3 class="choose-freq__header">Как часто повторять?</h3>
+                        <a href="#" class="choose-freq__item choose-freq__item_active">Чаще, чем раз<br> в неделю</a>
+                        <a href="#" class="choose-freq__item">Каждую неделю</a>
+                        <a href="#" class="choose-freq__item">Раз в 2 недели</a>
+                        <button class="reg-clean__save-options">Сохранить</button>
+                        <a href="#" class="reg-clean__calendar">Посмотреть<br>календарь уборки</a>
+                      </div>
                     </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-    <div class="discounts-description">
-      <div class="row">
-        <div class="small-12 medium-12 large-10 large-push-1 columns">
-          <div class="row f-ext_h">
-            <div class="row f-ext_h">
-              <div class="row f-ext_h">
-
-                <!-- !!! -->
-                  <div class="row">
-                    <div class="small-12 columns clearfix">
-                      <div class="left-col">
-                        <div class="discounts-description_header">Пригласите друга и получите скидку<br> 300 рублей на следующую уборку</div>
-                        <div class="share clearfix">
-                          <div class="clearfix">
-                            <div class="share_link">https://</div>
-                            <div class="share-social">
-                              <a href="#" class="share-social_item share-social_twitter"></a>
-                              <a href="#" class="share-social_item share-social_fb"></a>
-                              <a href="#" class="share-social_item share-social_vk"></a>
-                              <a href="#" class="share-social_item share-social_mail"></a>
-                            </div>
+                    <div class="right-col">
+                      <div class="order-details">
+                        <h2 class="order-details__header">Детали заказа</h2>
+                        <div class="details-wrap">
+                          <div class="order-details-when clearfix">
+                            <div class="order-details-when__time">15:30</div>
+                            <div class="order-details-when__date">Суббота<br> <span>26 сентября</span></div>
                           </div>
-                          <div class="share_description">Делитесь ссылкой со своими друзьями и сослуживцами<br> и получайте за это бонусы. Как только приглашенный вами друг<br> зарегистрируется и сделает первый заказ — вы получите 300 рублей на<br> личный счет. Скидка начисляется за каждого приглашенного друга!</div>
-                        </div>
-
-                        <div class="discounts-description_balance">
-                          Ваш баланс на уборки: <span id="balance">0 руб</span>
+                          <div class="order-details-number">
+                            <div class="order-details-number__top-line">
+                              <span class="time">Время</span>
+                              <span class="rate">Тариф</span>
+                            </div>
+                            <div class="clearfix">
+                              <div class="order-details-number__hours">3,5<span>часа</span></div>
+                              <div class="order-details-number__rate">550<span>руб<br>/час</span></div>
+                            </div>
+                            <div class="order-details-number__include">Включено мытье духовки, ходлодильника, глажка и наши моющие средства</div>
+                          </div>
+                          <div class="order-details-amount">
+                            <div class="order-details-amount__top-line">Итого</div>
+                            <div class="order-details-amount__total">3 000 <span>руб</span></div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+            </div>
           </div>
         </div>
       </div>
@@ -189,3 +191,4 @@
   </div>
   <script src="assets/js/dropdown.bundle.js"></script>
 </body>
+</html>
