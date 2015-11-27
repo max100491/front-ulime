@@ -60,7 +60,10 @@
   border: 1px solid #ff9400;
   transition: color ease 0.08s, background-color ease 0.08s;
 }
-.discounts-select_button:hover {
+.discounts-select a {
+  color: #fff;
+}
+.discounts-select a:hover {
   background-color: transparent;
   border: 1px solid #ff9400;
   color: #ff9400;

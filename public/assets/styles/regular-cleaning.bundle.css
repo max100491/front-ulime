@@ -100,7 +100,7 @@
 }
 .choose-days__item_active,
 .choose-freq__item_active {
-  color: #fff;
+  color: #fff !important;
   background-color: #4d4d4d;
   border-color: #4d4d4d;
 }
@@ -117,6 +117,10 @@
   color: #fff;
   background-color: #4d4d4d;
   border-color: #4d4d4d;
+}
+.choose-days a,
+.choose-freq a {
+  color: #000;
 }
 .choose-days {
   float: left;
